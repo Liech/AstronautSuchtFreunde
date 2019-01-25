@@ -30,6 +30,8 @@ public class gravityInfluence : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        if (other.gameObject.tag != "GravityInfluenced")
+          return;
         Vector2 downDir = t.position - other.GetComponent<Transform>().position;
         float dist = downDir.magnitude;
         Rigidbody2D rbOther = other.GetComponent<Rigidbody2D>();
