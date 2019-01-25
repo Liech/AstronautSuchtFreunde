@@ -24,12 +24,11 @@ public class spreadStars : MonoBehaviour
 
         for (int i = 0; i < numStars; i++)
         {
-            GameObject newStar = stars[i % stars.Capacity];
+            GameObject newStar = Instantiate(stars[i % stars.Capacity], this.GetComponent<Transform>() );
             Transform t = newStar.GetComponent<Transform>();
             t.localScale = Vector3.one * Random.Range(minScale, maxScale) * 0.001f;
-            t.position   = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), 0);
+            t.localPosition   = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), 0);
             t.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
-            Instantiate(newStar, this.GetComponent<Transform>() );
         }
 
     }                                                                             

@@ -35,9 +35,9 @@ public class gravityInfluence : MonoBehaviour
         Rigidbody2D rbOther = other.GetComponent<Rigidbody2D>();
         if (rbOther)
         {
-            float factor = Mathf.Min(1.0f,Mathf.Max(0.0f,(infleneceRadius - (dist - planetRadius)) / (infleneceRadius - planetRadius) ));
-            Debug.Log(factor);
-            rbOther.AddForce(downDir.normalized * factor * gravForce);
+            //float factor = Mathf.Min(1.0f,Mathf.Max(0.0f,(infleneceRadius - (dist - planetRadius)) / (infleneceRadius - planetRadius) ));
+            //Debug.Log(factor);
+            rbOther.AddForce(downDir.normalized  * gravForce);
         }
 
         
