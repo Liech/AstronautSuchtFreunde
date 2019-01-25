@@ -26,10 +26,10 @@ public class spreadStars : MonoBehaviour
         {
             GameObject newStar = stars[i % stars.Capacity];
             Transform t = newStar.GetComponent<Transform>();
-            t.localScale = Vector3.one * Random.Range(minScale, maxScale);
-            t.position   = new Vector3(Random.Range(-scale.x, scale.x), Random.Range(-scale.y, scale.y), 0) + pos;
+            t.localScale = Vector3.one * Random.Range(minScale, maxScale) * 0.01f;
+            t.position   = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), 0);
             t.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
-            Instantiate(newStar);
+            Instantiate(newStar, this.GetComponent<Transform>() );
         }
 
     }                                                                             
