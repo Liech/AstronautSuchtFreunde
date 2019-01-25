@@ -53,7 +53,7 @@ public class Satellit : MonoBehaviour
       GameObject bullet = Instantiate(Bullet);
       Vector2 dir = new Vector2(Mathf.Sin(Mathf.Deg2Rad * Me), Mathf.Cos(Mathf.Deg2Rad * Me));
       bullet.transform.position = (Vector2)transform.position + dir  * bullletStartDistance;
-      bullet.GetComponent<Rigidbody2D>().velocity = (dir * 10);
+      bullet.GetComponent<Rigidbody2D>().velocity = (dir * bulletStartSpeed);
       StartCoroutine(Reload());
     }
 
