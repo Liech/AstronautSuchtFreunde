@@ -53,8 +53,8 @@ MonoBehaviour:
   SphereOfInflucence: {fileID: 4372524797184120888}
   startVelocity: {x: 80, y: 0, z: 0}
   RotationSpeed: 7
-  reloadTime: 0.5
-  bullletStartDistance: 4
+  reloadTime: 2
+  bullletStartDistance: 9
   bulletStartSpeed: 70
 --- !u!58 &4372524797184120889
 CircleCollider2D:

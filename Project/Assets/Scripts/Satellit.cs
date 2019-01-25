@@ -73,7 +73,8 @@ public class Satellit : MonoBehaviour
 
   void OnTriggerExit2D(Collider2D collision)
   {
-    Active = false;
+    if (collision.gameObject == Target)
+      Active = false;
   }
 
   //https://stackoverflow.com/questions/13458992/angle-between-two-vectors-2d
