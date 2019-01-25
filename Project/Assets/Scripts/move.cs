@@ -22,9 +22,12 @@ public class move : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         if (System.Math.Abs(moveHorizontal) + System.Math.Abs(moveVertical) > 0.1)
         {
-          Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
-          transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(Vector3.back, movement));
-          rb.AddForce(movement * speed);
+            Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
+            transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(Vector3.back, movement));
+            if (Input.GetButton("Fire1"))
+            {
+                rb.AddForce(movement * speed);
+            }
         } else
         {
             var lookdir = GetComponent<Rigidbody2D>().velocity;
