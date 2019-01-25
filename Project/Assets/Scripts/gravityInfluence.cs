@@ -33,7 +33,7 @@ public class gravityInfluence : MonoBehaviour
         Vector2 downDir = t.position - other.GetComponent<Transform>().position;
         float dist = downDir.magnitude;
         Rigidbody2D rbOther = other.GetComponent<Rigidbody2D>();
-        if(rbOther)
+        if (rbOther)
             rbOther.AddForce(- downDir.normalized * (infleneceRadius - dist) / infleneceRadius * gravForce);
         
     }
