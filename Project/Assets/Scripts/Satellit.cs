@@ -5,9 +5,9 @@ using UnityEngine;
 public class Satellit : MonoBehaviour
 {
   public GameObject Target;
-  public GameObject Turret;
   public GameObject Bullet;
   public Collider2D SphereOfInflucence;
+  public Vector3 startVelocity;
 
   public float RotationSpeed = 2;
   public float reloadTime = 0.5f;
@@ -19,6 +19,7 @@ public class Satellit : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
+    GetComponent<Rigidbody2D>().velocity = startVelocity;
   }
 
   // Update is called once per frame
@@ -27,13 +28,13 @@ public class Satellit : MonoBehaviour
     if (!Active)
       return;
 
-    Vector3 vectorToTarget = Target.transform.position - Turret.transform.position;
+    Vector3 vectorToTarget = Target.transform.position - transform.position;
     float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
     Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-    Turret.transform.rotation = Quaternion.Slerp(Turret.transform.rotation, q, Time.deltaTime * RotationSpeed);
+    transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * RotationSpeed);
 
     float He = AngleBetween(Target.transform.position - transform.position, new Vector2(0, 1));
-    float Me = 360 - (Turret.transform.eulerAngles.z) + 90;
+    float Me = 360 - (transform.eulerAngles.z) + 90;
     if (Me > 180) Me -= 360;
     if (He < -180) He += 360;
 
@@ -45,7 +46,7 @@ public class Satellit : MonoBehaviour
       ReadyToShoot = false;
       GameObject bullet = Instantiate(Bullet);
       Vector2 dir = new Vector2(Mathf.Sin(Mathf.Deg2Rad * Me), Mathf.Cos(Mathf.Deg2Rad * Me));
-      bullet.transform.position = (Vector2)Turret.transform.position + dir  * bullletStartDistance;
+      bullet.transform.position = (Vector2)transform.position + dir  * bullletStartDistance;
       bullet.GetComponent<Rigidbody2D>().velocity = (dir * 10);
       StartCoroutine(Reload());
     }
