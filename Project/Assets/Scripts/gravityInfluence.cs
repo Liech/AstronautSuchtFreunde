@@ -13,8 +13,8 @@ public class gravityInfluence : MonoBehaviour
     void Start()
     {
         t = GetComponent<Transform>();
-        planetRadius = t.localScale[0];
-        infleneceRadius = GetComponent<CircleCollider2D>().radius;
+        planetRadius    = t.lossyScale.x; // as long as the inner collider radius is set to '1'
+        infleneceRadius = GetComponent<CircleCollider2D>().radius * t.lossyScale.x;
     }
 
     // Update is called once per frame
@@ -34,7 +34,12 @@ public class gravityInfluence : MonoBehaviour
         float dist = downDir.magnitude;
         Rigidbody2D rbOther = other.GetComponent<Rigidbody2D>();
         if (rbOther)
-            rbOther.AddForce(- downDir.normalized * (infleneceRadius - dist) / infleneceRadius * gravForce);
+        {
+            float factor = Mathf.Min(1.0f,Mathf.Max(0.0f,(infleneceRadius - (dist - planetRadius)) / (infleneceRadius - planetRadius) ));
+            Debug.Log(factor);
+            rbOther.AddForce(downDir.normalized * factor * gravForce);
+        }
+
         
     }
 }
