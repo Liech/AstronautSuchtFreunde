@@ -17,6 +17,6 @@ public class Life : MonoBehaviour
   void Update()
   {
     if (currentLife <= 0)
-      Destroy(this);
+      Destroy(gameObject);
   }
 }

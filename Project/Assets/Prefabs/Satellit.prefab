@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4372524797184120889}
   - component: {fileID: 4372524797184120888}
   - component: {fileID: 7786916449271149460}
+  - component: {fileID: 8202283170071063719}
   m_Layer: 0
   m_Name: Satellit
   m_TagString: Untagged
@@ -108,6 +109,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8202283170071063719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372524797184120892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1a7fca4a8eae3448e811d285d92381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLife: 1
+  MaxLife: 1
 --- !u!1 &5515986976473066911
 GameObject:
   m_ObjectHideFlags: 0
