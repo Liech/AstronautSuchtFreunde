@@ -20,9 +20,16 @@ public class move : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
-        transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(movement, new Vector3(0.0f,-1.0f,0.0f)));
-        rb.AddForce(movement * speed);
+        if (System.Math.Abs(moveHorizontal) + System.Math.Abs(moveVertical) > 0.1)
+        {
+          Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
+          transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(Vector3.back, movement));
+          rb.AddForce(movement * speed);
+        } else
+        {
+            var lookdir = GetComponent<Rigidbody2D>().velocity;
+            if (lookdir.magnitude>0.5)
+                transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(Vector3.back, GetComponent<Rigidbody2D>().velocity)); 
+        }
     }
 }
