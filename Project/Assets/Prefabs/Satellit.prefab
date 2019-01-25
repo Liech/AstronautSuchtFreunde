@@ -50,9 +50,11 @@ MonoBehaviour:
   Target: {fileID: 0}
   Bullet: {fileID: 1768278724480458840, guid: 5223b20efd13b0049be9c354f1aa5b73, type: 3}
   SphereOfInflucence: {fileID: 4372524797184120888}
+  startVelocity: {x: 80, y: 0, z: 0}
   RotationSpeed: 7
   reloadTime: 0.5
   bullletStartDistance: 4
+  bulletStartSpeed: 70
 --- !u!58 &4372524797184120889
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84,7 +86,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 31.508255
+  m_Radius: 131.50826
 --- !u!50 &7786916449271149460
 Rigidbody2D:
   serializedVersion: 4

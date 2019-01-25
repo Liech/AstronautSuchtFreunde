@@ -12,6 +12,7 @@ public class Satellit : MonoBehaviour
   public float RotationSpeed = 2;
   public float reloadTime = 0.5f;
   public float bullletStartDistance = 10;
+  public float bulletStartSpeed = 30;
 
   private bool Active = false;
   private bool ReadyToShoot = true;
@@ -19,6 +20,7 @@ public class Satellit : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
+    Target = GameObject.Find("Player");
     GetComponent<Rigidbody2D>().velocity = startVelocity;
   }
 
@@ -26,12 +28,16 @@ public class Satellit : MonoBehaviour
   void FixedUpdate()
   {
     if (!Active)
+    {
+      //transform.rotation = Quaternion.identity;
       return;
+    }
 
     Vector3 vectorToTarget = Target.transform.position - transform.position;
     float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
     Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-    transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * RotationSpeed);
+    transform.rotation = Quaternion.Slerp(transform.rotation, q, RotationSpeed);
+
 
     float He = AngleBetween(Target.transform.position - transform.position, new Vector2(0, 1));
     float Me = 360 - (transform.eulerAngles.z) + 90;
