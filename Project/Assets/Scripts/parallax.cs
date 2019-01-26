@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class parallax : MonoBehaviour
 {
-    [Range(0,0.5f)]
+    [Range(-0.5f,0.5f)]
     public float strength = 1.0f;
     // Start is called before the first frame update
     void Start()

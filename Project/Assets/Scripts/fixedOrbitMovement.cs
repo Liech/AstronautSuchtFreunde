@@ -5,7 +5,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class fixedOrbitMovement : MonoBehaviour
 {
-    [Range(0,400)]
+    [Range(0,4000)]
     public float radius = 100f;
     [Range(-6, 6)]
     public float orbitSpeed  = 1f;
