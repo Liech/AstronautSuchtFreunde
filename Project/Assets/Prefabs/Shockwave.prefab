@@ -95,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 13
   draw: 0
-  shock: 1000
+  shock: 500
   range: 230
 --- !u!114 &2791330211536923532
 MonoBehaviour:
