@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5047356246864193754}
   - component: {fileID: 5047356246864193757}
   - component: {fileID: 5047356246864193752}
+  - component: {fileID: 7429250829640832470}
   m_Layer: 0
   m_Name: roboBewohner
   m_TagString: GravityInfluenced
@@ -143,3 +144,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpStrength: 1000
+--- !u!114 &7429250829640832470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5047356246864193759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18d8c073ee18a74daa16cf6b2c7122b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  farbe: 2
