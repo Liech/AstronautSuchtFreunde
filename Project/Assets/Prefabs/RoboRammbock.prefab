@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1149223829338899288}
-  - component: {fileID: 8854036673985974665}
+  - component: {fileID: 3141637314075472564}
   - component: {fileID: 7187562650270540364}
   - component: {fileID: 7187562650270540363}
   - component: {fileID: 2147402746559037225}
@@ -117,8 +117,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &8854036673985974665
-CircleCollider2D:
+--- !u!70 &3141637314075472564
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,9 +130,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 4
+  m_Offset: {x: 0.1, y: 0.49}
+  m_Size: {x: 17.91, y: 7.42}
+  m_Direction: 1
 --- !u!50 &7187562650270540364
 Rigidbody2D:
   serializedVersion: 4
@@ -178,8 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1a7fca4a8eae3448e811d285d92381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLife: 300
-  MaxLife: 300
+  currentLife: 100
+  MaxLife: 100
   flashColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!114 &1722459536386535396
 MonoBehaviour:
