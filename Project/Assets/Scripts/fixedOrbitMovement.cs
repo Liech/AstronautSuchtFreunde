@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class fixedOrbitMovement : MonoBehaviour
 {
     [Range(0,4000)]

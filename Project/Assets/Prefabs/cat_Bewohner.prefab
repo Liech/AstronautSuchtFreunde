@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5047356246864193757}
   - component: {fileID: 5047356246864193752}
   - component: {fileID: 916388038928271443}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: cat_Bewohner
   m_TagString: GravityInfluenced
   m_Icon: {fileID: 0}
@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpStrength: 1000
+  planetPos: {x: 0, y: 0, z: 0}
 --- !u!114 &916388038928271443
 MonoBehaviour:
   m_ObjectHideFlags: 0
