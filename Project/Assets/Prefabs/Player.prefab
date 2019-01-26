@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 4377027865992566421}
   - component: {fileID: 9155647448985673138}
   - component: {fileID: 4563947159551492284}
+  - component: {fileID: 5122698479144434265}
   m_Layer: 0
   m_Name: Player
   m_TagString: GravityInfluenced
@@ -444,6 +445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   startingVelocity: {x: 30, y: 0, z: 0}
+  startingPosition: {x: 0, y: 0, z: 0}
   InPlanetInfluence: []
 --- !u!212 &9155647450436422890
 SpriteRenderer:
@@ -765,6 +767,19 @@ MonoBehaviour:
   WeaponLvL: 1
   Health: 100
   DriveFactor: 1
+--- !u!114 &5122698479144434265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155647450436422895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23c4e93a12a9284bb082afbc251ccc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 3000
 --- !u!1001 &5080469695125202205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -886,6 +901,11 @@ PrefabInstance:
         type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198064713177833144, guid: bab2f13eaaf31454aafa3d30787c5b15,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199908070248919538, guid: bab2f13eaaf31454aafa3d30787c5b15,
         type: 3}
@@ -1021,6 +1041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198064713177833144, guid: bab2f13eaaf31454aafa3d30787c5b15,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199908070248919538, guid: bab2f13eaaf31454aafa3d30787c5b15,
         type: 3}
