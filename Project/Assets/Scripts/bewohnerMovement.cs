@@ -33,6 +33,9 @@ public class bewohnerMovement : MonoBehaviour
 
         if (time > nextJumpTime)
         {
+            if (Random.Range(0f, 1f) > 0.99f)
+                jump(10000f); // infinitity jump
+                // maybe play 'wilhelms scream' here
             jump(Random.Range(0f, jumpStrength));
             nextJumpTime += Random.Range(3f, 6f);
         }
