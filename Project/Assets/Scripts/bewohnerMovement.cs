@@ -6,11 +6,11 @@ public class bewohnerMovement : MonoBehaviour
 {
     public float moveSpeed  = 5;
     public float jumpStrength = 500;
+    public Vector3 planetPos;
 
 
     private float nextTurnTime = 5f;
     private float nextJumpTime = 5f;
-    private Vector3 planetPos;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
