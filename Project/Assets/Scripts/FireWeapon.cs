@@ -16,20 +16,54 @@ public class FireWeapon : MonoBehaviour
         
     }
 
+    void spawn(float Me, float dist, float angle)
+    {
+        GameObject bullet = Instantiate(Bullet);
+        Vector2 dir = new Vector2(Mathf.Sin(Mathf.Deg2Rad * (Me + angle)), Mathf.Cos(Mathf.Deg2Rad * (Me + angle)));
+        bullet.transform.position = (Vector2)transform.position + dir * dist * bullletStartDistance;
+        bullet.GetComponent<Rigidbody2D>().velocity = (dir * bulletStartSpeed) + GetComponent<Rigidbody2D>().velocity;
+    }
+
     // Update is called once per frame
     void Update()
     {
-      if (Input.GetButton("Fire2") && canFire)
-      {
-        float Me = (transform.eulerAngles.z);
-        
-        canFire = false;
-        StartCoroutine(reload());
-        GameObject bullet = Instantiate(Bullet);
-        Vector2 dir = new Vector2(Mathf.Sin(Mathf.Deg2Rad * Me), Mathf.Cos(Mathf.Deg2Rad * Me));
-        bullet.transform.position = (Vector2)transform.position + dir * bullletStartDistance;
-        bullet.GetComponent<Rigidbody2D>().velocity = (dir * bulletStartSpeed) + GetComponent<Rigidbody2D>().velocity;
-      }
+        if (Input.GetButton("Fire2") && canFire)
+        {
+            float Me = (transform.eulerAngles.z);
+
+            canFire = false;
+            StartCoroutine(reload());
+            int level = GameObject.Find("Player").GetComponent<Systems>().WeaponLvL;
+
+            switch (level)
+            {
+                case 1:
+                    spawn(Me, 1f, 0f);
+                    break;
+                case 2:
+                    spawn(Me, 1f, 0f);
+                    spawn(Me, 2f, 0f);
+                    spawn(Me, 3f, 0f);
+                    break;
+                case 3:
+                    spawn(Me, 1f, 0f);
+                    spawn(Me, 1f, -10f);
+                    spawn(Me, 1f, +10f);
+                    break;
+                case 4:
+                    spawn(Me, 1f, 0f);
+                    spawn(Me, 1f, -10f);
+                    spawn(Me, 1f, +10f);
+                    spawn(Me, 2f, 0f);
+                    spawn(Me, 2f, -10f);
+                    spawn(Me, 2f, +10f);
+                    spawn(Me, 3f, 0f);
+                    spawn(Me, 3f, -10f);
+                    spawn(Me, 3f, +10f);
+                    break;
+            }
+            
+        }
     }
 
     IEnumerator reload()
