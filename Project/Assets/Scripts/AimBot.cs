@@ -7,7 +7,6 @@ public class AimBot : MonoBehaviour
   public GameObject Target;
   public GameObject Bullet;
   public float SphereOfInflucence = 420;
-  public GameObject FireSound;
   public Vector3 startVelocity;
 
   public float RotationSpeed = 2;
@@ -62,12 +61,7 @@ public class AimBot : MonoBehaviour
       bullet.transform.GetChild(1).GetComponent<SpriteRenderer>().color = bulletColor;
       ParticleSystem.MainModule settings = bullet.transform.GetChild(0).GetComponent<ParticleSystem>().main;
       settings.startColor = new ParticleSystem.MinMaxGradient(bulletColor);
-      if (FireSound != null)
-      {
-        GameObject g = Instantiate(FireSound, gameObject.transform);
-        g.transform.position = transform.position;
 
-      }
       StartCoroutine(Reload());
     }
 

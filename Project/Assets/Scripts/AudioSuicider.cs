@@ -18,7 +18,7 @@ public class AudioSuicider : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if ((Time.time - initTime) > src.timeSamples / 441000f + 9)
+        if ((Time.time - initTime) > src.timeSamples / 441000f + 1)
         {
             Destroy(this.gameObject);        
         }
