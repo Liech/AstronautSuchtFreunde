@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Systems : MonoBehaviour
 {
-    public float WeaponLvL = 1;
+    public int WeaponLvL = 1;
     public int Health = 100;
     public float DriveFactor = 1;
 
