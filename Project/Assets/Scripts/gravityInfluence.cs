@@ -9,6 +9,8 @@ public class gravityInfluence : MonoBehaviour
     private Transform t;
     private float planetRadius;
     private float infleneceRadius;
+    public float playerOrbitHeight = 150f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +65,7 @@ public class gravityInfluence : MonoBehaviour
             float factor = 1.0f;
             if (other.gameObject.name == "Player")
             {
+                playerOrbitHeight = dist;
                 float relPos = (dist - planetRadius) / (infleneceRadius - planetRadius); // relPos = 1 if at outer rim, relPos = 0 if landed
                 factor = gravityCurve.Evaluate(relPos);
             }

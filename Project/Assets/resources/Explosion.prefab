@@ -77,7 +77,7 @@ SpriteRenderer:
   m_Size: {x: 11.8949995, y: 14.705}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &6223826117086579076
@@ -93,11 +93,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multisprite:
-  - {fileID: 21300000, guid: ab90290918b671549a8243035c330aa2, type: 3}
-  - {fileID: 21300002, guid: ab90290918b671549a8243035c330aa2, type: 3}
-  - {fileID: 21300004, guid: ab90290918b671549a8243035c330aa2, type: 3}
-  - {fileID: 21300008, guid: ab90290918b671549a8243035c330aa2, type: 3}
-  - {fileID: 21300010, guid: ab90290918b671549a8243035c330aa2, type: 3}
-  - {fileID: 21300012, guid: ab90290918b671549a8243035c330aa2, type: 3}
-  - {fileID: 21300014, guid: ab90290918b671549a8243035c330aa2, type: 3}
+  - {fileID: 21300000, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
+  - {fileID: 21300002, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
+  - {fileID: 21300004, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
+  - {fileID: 21300006, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
+  - {fileID: 21300008, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
+  - {fileID: 21300010, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
+  - {fileID: 21300012, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
+  - {fileID: 21300014, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
   animationTime: 1
