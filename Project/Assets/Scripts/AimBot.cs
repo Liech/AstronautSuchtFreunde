@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Satellit : MonoBehaviour
+public class AimBot : MonoBehaviour
 {
   public GameObject Target;
   public GameObject Bullet;
@@ -46,7 +46,7 @@ public class Satellit : MonoBehaviour
 
     float diff = Mathf.Abs(Me - He);
     
-    Debug.Log(diff);
+    //Debug.Log(diff);
     if ((diff < 5) && ReadyToShoot)
     {
       ReadyToShoot = false;
