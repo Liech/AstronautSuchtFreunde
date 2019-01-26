@@ -26,9 +26,19 @@ public class fixedOrbitMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    if (orbiterTransform == null)
+    {
+      StartBossFight();
+      return;
+    }
         float t = Time.time;
         orbiterTransform.position = transform.position + new Vector3(Mathf.Cos(t * orbitSpeed), Mathf.Sin(t * orbitSpeed), 0) * radius;
         if(rotateObejct)
             orbiterTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, t * rotationSpeed * 360));
     }
+
+  void StartBossFight()
+  {
+
+  }
 }
