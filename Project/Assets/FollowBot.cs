@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowBot : MonoBehaviour
 {
   public GameObject Target;
-  public Collider2D SphereOfInflucence;
+  public float SphereOfInflucence = 420;
   public Transform home;
   public float speed = 10;
   public float happyDistance = 10;
@@ -24,6 +24,8 @@ public class FollowBot : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
+    Active = (Target.transform.position - transform.position).magnitude < SphereOfInflucence;
+
     //if (!Active) return;
     //if (!Target) return;
 
@@ -38,19 +40,6 @@ public class FollowBot : MonoBehaviour
       GetComponent<Rigidbody2D>().AddForce(-homeDistance.normalized * speed);
     else if (Active)
       GetComponent<Rigidbody2D>().AddForce(diff.normalized * speed);
-  }
-
-
-  private void OnTriggerEnter2D(Collider2D collision)
-  {
-    if (collision.gameObject == Target)
-      Active = true;
-  }
-
-  void OnTriggerExit2D(Collider2D collision)
-  {
-    if (collision.gameObject == Target)
-      Active = false;
   }
 
   //https://stackoverflow.com/questions/13458992/angle-between-two-vectors-2d

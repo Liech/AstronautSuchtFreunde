@@ -6,7 +6,7 @@ public class AimBot : MonoBehaviour
 {
   public GameObject Target;
   public GameObject Bullet;
-  public Collider2D SphereOfInflucence;
+  public float SphereOfInflucence = 420;
   public Vector3 startVelocity;
 
   public float RotationSpeed = 2;
@@ -27,6 +27,8 @@ public class AimBot : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
+    Active = (Target.transform.position - transform.position).magnitude < SphereOfInflucence;
+    Debug.Log((Target.transform.position - transform.position).magnitude);
     if (!Active)
     {
       //transform.rotation = Quaternion.identity;
@@ -63,18 +65,6 @@ public class AimBot : MonoBehaviour
   {
     yield return new WaitForSeconds(reloadTime);
     ReadyToShoot = true;
-  }
-
-  private void OnTriggerEnter2D(Collider2D collision)
-  {
-    if (collision.gameObject == Target)
-      Active = true;
-  }
-
-  void OnTriggerExit2D(Collider2D collision)
-  {
-    if (collision.gameObject == Target)
-      Active = false;
   }
 
   //https://stackoverflow.com/questions/13458992/angle-between-two-vectors-2d

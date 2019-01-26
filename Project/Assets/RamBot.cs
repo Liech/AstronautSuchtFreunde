@@ -5,7 +5,7 @@ using UnityEngine;
 public class RamBot : MonoBehaviour
 {
   public GameObject Target;
-  public Collider2D SphereOfInflucence;
+  public float SphereOfInflucence = 420;
   public Transform home;
   public float speed = 10;
   public float maxHomeDist = 50;
@@ -17,7 +17,7 @@ public class RamBot : MonoBehaviour
   void Start()
   {
     Target = GameObject.Find("Player");
-    SphereOfInflucence = GameObject.Find("Universe/Robo Planet").GetComponent<Collider2D>();
+    
     home = GameObject.Find("Universe/Robo Planet").transform;
 
   }
@@ -25,6 +25,7 @@ public class RamBot : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
+    Active = (Target.transform.position - transform.position).magnitude < SphereOfInflucence;
     //if (!Active) return;
     //if (!Target) return;
     if (Target == null) return;
@@ -37,19 +38,6 @@ public class RamBot : MonoBehaviour
       GetComponent<Rigidbody2D>().AddForce(-homeDistance.normalized * speed);
     else if (Active)
       GetComponent<Rigidbody2D>().AddForce(diff.normalized * speed);
-  }
-
-
-  private void OnTriggerEnter2D(Collider2D collision)
-  {
-    if (collision.gameObject == Target)
-      Active = true;
-  }
-
-  void OnTriggerExit2D(Collider2D collision)
-  {
-    if (collision.gameObject == Target)
-      Active = false;
   }
 
   //https://stackoverflow.com/questions/13458992/angle-between-two-vectors-2d
