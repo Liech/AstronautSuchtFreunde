@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1010435949627369246}
   - component: {fileID: 7267794517143843419}
   - component: {fileID: 4593021623486916444}
+  - component: {fileID: 3289533614957782651}
   m_Layer: 0
   m_Name: "gr\xFCner_fighter"
   m_TagString: Untagged
@@ -243,3 +244,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageFactor: 1
+--- !u!114 &3289533614957782651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159719948345775509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c4b10680ff0e347bebda661a85a6ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
