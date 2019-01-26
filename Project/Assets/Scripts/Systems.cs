@@ -15,7 +15,7 @@ public class Systems : MonoBehaviour
     List<float> driveFactors = new List<float> { 1.0f, 1.5f, 2.3f, 3.0f };
     List<int> healthAmounts = new List<int> { 100, 150, 220, 300 };
 
-    float totalTime = 0; {get} 
+    public float totalTime = 0; 
 
     public void lvlUpDrive()
     {

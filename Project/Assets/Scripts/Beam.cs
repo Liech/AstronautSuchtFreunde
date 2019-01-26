@@ -36,7 +36,7 @@ public class Beam : MonoBehaviour
                     foreach (var bewohner in bewohners)
                     {
                         float dist = (bewohner.gameObject.transform.position - hitpos).magnitude;
-                        if (dist < minDist && dist < 5)
+                        if (dist < minDist && dist < 8)
                         {
                             minDist = dist;
                             closestBewhoner = bewohner.gameObject;
