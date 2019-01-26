@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 124050299}
   - component: {fileID: 124050298}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tardis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 1709701944}
   - component: {fileID: 1709701946}
   - component: {fileID: 1709701945}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tardis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 790728182358040169}
   - component: {fileID: 459165111577417775}
   - component: {fileID: 616710278246129972}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,4 +205,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c6f9a5998c4674286f11176ab3023a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2

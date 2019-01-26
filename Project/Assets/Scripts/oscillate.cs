@@ -15,6 +15,6 @@ public class oscillate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        l.intensity = 10f + Mathf.Sin(Time.time * speed) * 5f;
+        l.intensity = 6f + Mathf.Sin(Time.time * speed) * 5f;
     }
 }
