@@ -24,6 +24,7 @@ public class FollowBot : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
+    if (Target == null) return;
     Active = (Target.transform.position - transform.position).magnitude < SphereOfInflucence;
 
     //if (!Active) return;

@@ -25,17 +25,18 @@ public class RoboBossBehavior : MonoBehaviour
   void Update()
   {
     if (!awake) return;
-    //float perc = ((float)GetComponent<Life>().currentLife / (float)GetComponent<Life>().MaxLife);
-    //GetComponent<SpriteRenderer>().color = new Color(1, perc, perc);
+    float perc = ((float)GetComponent<Life>().currentLife / (float)GetComponent<Life>().MaxLife);
+    GetComponent<SpriteRenderer>().color = new Color(1, perc, perc);
     transform.parent.GetComponent<fixedOrbitMovement>().radius = orbit + Mathf.Sin(Time.time* ocillationspeed) * oscillationdistance;
   }
   float orbit = 0;
   public void WakeUp()
   {
     GetComponent<SpriteRenderer>().sprite = AwakeSprite;
-    //Life l = gameObject.AddComponent<Life>();
-    //l.currentLife = 700;
-    //l.MaxLife = 700;
+    Life l = gameObject.AddComponent<Life>();
+    gameObject.AddComponent<CollisionDamage>();
+    l.currentLife = 700;
+    l.MaxLife = 700;
     awake = true;
     transform.parent.GetComponent<fixedOrbitMovement>().orbitSpeed *= 5;
     orbit = transform.parent.GetComponent<fixedOrbitMovement>().radius;
