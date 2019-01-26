@@ -6,6 +6,7 @@ public class move : MonoBehaviour
 {
 
     public float speed;
+    public Vector3 startingVelocity;
 
     private Rigidbody2D rb;
 
@@ -13,6 +14,7 @@ public class move : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.velocity = startingVelocity;
     }
 
     // Update is called once per frame
