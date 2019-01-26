@@ -24,7 +24,7 @@ public class CollisionDamage : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         float factor = damageFactors[GameObject.Find("Player").GetComponent<Systems>().WeaponLvL-1];
-
+        //Debug.Log("WeaponLevel: " + GameObject.Find("Player").GetComponent<Systems>().WeaponLvL.ToString() + ", factor: " + factor.ToString());
         float diff = collision.relativeVelocity.magnitude;
         if (diff > 20f)
             diff = 20f;

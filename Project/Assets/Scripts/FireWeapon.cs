@@ -35,6 +35,8 @@ public class FireWeapon : MonoBehaviour
             StartCoroutine(reload());
             int level = GameObject.Find("Player").GetComponent<Systems>().WeaponLvL;
 
+            //Debug.Log("weapon level: " + level.ToString());
+
             switch (level)
             {
                 case 1:

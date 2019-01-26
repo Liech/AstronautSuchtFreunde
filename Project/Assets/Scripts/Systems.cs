@@ -36,7 +36,7 @@ public class Systems : MonoBehaviour
     public void lvlUpWeapons()
     {
         weaponLVL += 1;
-        WeaponLvL = weaponLVL;
+        WeaponLvL = weaponLVL+1;
         Debug.Log("leveled up weapons to " + weaponLVL.ToString());
 
     }
