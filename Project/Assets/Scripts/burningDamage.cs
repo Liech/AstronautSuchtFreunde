@@ -14,7 +14,7 @@ public class burningDamage : MonoBehaviour
         if (Time.time > tick)
         {
             tick += 1f;
-            other.GetComponent<Life>().currentLife -= damagePerSecond;
+            other.GetComponent<Life>().getDamage(damagePerSecond);
         }
 
     }
@@ -24,7 +24,7 @@ public class burningDamage : MonoBehaviour
         other.GetComponent<SpriteRenderer>().color = burnColor;
     }
 
-    private void OnTriggerLeave2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         other.GetComponent<SpriteRenderer>().color = Color.white;
     }

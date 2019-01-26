@@ -24,6 +24,7 @@ public class CollisionDamage : MonoBehaviour
   private void OnCollisionEnter2D(Collision2D collision)
   {
     float diff = collision.relativeVelocity.magnitude;
-    GetComponent<Life>().currentLife -= (int)(diff * DamageFactor);
+
+    GetComponent<Life>().getDamage((int)(diff * DamageFactor));
   }
 }

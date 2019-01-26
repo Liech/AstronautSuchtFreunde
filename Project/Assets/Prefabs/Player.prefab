@@ -710,6 +710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   MaxLife: 100
+  flashColor: {r: 0.3537736, g: 0.3537736, b: 1, a: 1}
 --- !u!114 &4377027865992566421
 MonoBehaviour:
   m_ObjectHideFlags: 0
