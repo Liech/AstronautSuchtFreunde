@@ -27,7 +27,13 @@ public class Life : MonoBehaviour
           GameObject g = Instantiate(Resources.Load("Explosion", typeof(GameObject))) as GameObject;
           g.transform.localScale = Vector3.one * Mathf.Sqrt(MaxLife);
           g.transform.position = transform.position;
-          Destroy(gameObject);
+            if(gameObject.name != "Player")
+                Destroy(gameObject);
+            else
+            {
+                currentLife = MaxLife;
+                GetComponent<move>().respawnPlayer();
+            }
         }
     }
 

@@ -7,6 +7,7 @@ public class move : MonoBehaviour
 
     public float speed;
     public Vector3 startingVelocity;
+    public Vector3 startingPosition;
     public List<GameObject> InPlanetInfluence;
 
     private Rigidbody2D rb;
@@ -16,6 +17,7 @@ public class move : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = startingVelocity;
+        startingPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -47,5 +49,11 @@ public class move : MonoBehaviour
             if (lookdir.magnitude>0.5)
                 transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(Vector3.back, GetComponent<Rigidbody2D>().velocity)); 
         }
+    }
+
+    public void respawnPlayer()
+    {
+        transform.position = startingPosition;
+        rb.velocity        = startingVelocity;
     }
 }
