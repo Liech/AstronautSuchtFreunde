@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ca3faf88951e7ae488e3bb1307d67e49
+guid: 38a4abd901272f94b8c3040de34238d2
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -12,19 +12,8 @@ TrueTypeFontImporter:
   fontNames:
   - Montserrat
   fallbackFontReferences:
-  - {fileID: 12800000, guid: 07076e40532ed964bb7d7b5e3d9a932b, type: 3}
-  - {fileID: 12800000, guid: 3040b993660c9e74cb85800b73dbdcb9, type: 3}
-  - {fileID: 12800000, guid: 72bd6376f8a56ae42a0179f56a35f3ae, type: 3}
-  - {fileID: 12800000, guid: a28f74c7101061a4b80302db2dc4dc55, type: 3}
-  - {fileID: 12800000, guid: a7d3e678304cb4745a136183242eefd6, type: 3}
-  - {fileID: 12800000, guid: a844ddf8a75d48a4e980951ba9cfc002, type: 3}
-  - {fileID: 12800000, guid: 78e25a7944566d7449fdf818298c980b, type: 3}
-  - {fileID: 12800000, guid: b320d11ac5e02af40b01840b859bb823, type: 3}
-  - {fileID: 12800000, guid: 29d835bc3383a9f4ca6312c2ad239451, type: 3}
-  - {fileID: 12800000, guid: 71e2fa0d1c4c95647a2393fa405a4c65, type: 3}
-  - {fileID: 12800000, guid: 9d5ced6d56bb8984e9e47ff7fb428697, type: 3}
-  - {fileID: 12800000, guid: 006c34ed87596424a8bcb4720876a5b1, type: 3}
-  - {fileID: 12800000, guid: 595cde8ec3ec344448de7671ea227e2e, type: 3}
+  - {fileID: 12800000, guid: 114b80c06193b074cb2757f5a5870506, type: 3}
+  - {fileID: 12800000, guid: 185e5a83881fe4a4cbeab44a46a701d9, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
