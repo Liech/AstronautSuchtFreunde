@@ -9,7 +9,7 @@ public class spreadStars : MonoBehaviour
 
     [Range(0, 2)]
     public float minScale = 1;
-    [Range(0, 5)]
+    [Range(0, 10)]
     public float maxScale = 1;
 
     public List<GameObject> stars;

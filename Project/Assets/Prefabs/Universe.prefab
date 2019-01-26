@@ -32,6 +32,7 @@ Transform:
   - {fileID: 4877889200892367870}
   - {fileID: 4877889200089769159}
   - {fileID: 3280740935262846417}
+  - {fileID: 2133711585310477255}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,6 +48,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36cb11a3d3a8244ea3d2cc03bd9b025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &2133711585232533852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4877889201512760734}
+    m_Modifications:
+    - target: {fileID: 91927190, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_Name
+      value: Cat Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 516.2144
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -105.64691
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.9166
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 62.71461
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 62.71461
+      objectReference: {fileID: 0}
+    - target: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 62.71461
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8d3015764eae924190ec30c51ce423a, type: 3}
+--- !u!4 &2133711585310477255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 91927195, guid: b8d3015764eae924190ec30c51ce423a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2133711585232533852}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3280740935206833994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -594,12 +670,12 @@ PrefabInstance:
     - target: {fileID: 2833569765960134764, guid: 84c187f1f0829eb43b15600d8643c859,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80.22632
+      value: 142.7692
       objectReference: {fileID: 0}
     - target: {fileID: 2833569765960134764, guid: 84c187f1f0829eb43b15600d8643c859,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 245.20958
+      value: 214.89755
       objectReference: {fileID: 0}
     - target: {fileID: 2833569765960134762, guid: 84c187f1f0829eb43b15600d8643c859,
         type: 3}
