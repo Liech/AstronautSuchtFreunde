@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 2870652047675256121}
   - component: {fileID: 7287311344062849330}
   m_Layer: 0
-  m_Name: fixedOrbit (2)
+  m_Name: satelit orbit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,12 +763,12 @@ PrefabInstance:
     - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 123.849594
+      value: 158.76181
       objectReference: {fileID: 0}
     - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -226.33003
+      value: -203.36835
       objectReference: {fileID: 0}
     - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
         type: 3}
@@ -849,6 +849,21 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6737559994445412602, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: DamageFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202283170071063719, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: currentLife
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202283170071063719, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: MaxLife
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 802478e9bb341f8448857a6bbd380375, type: 3}
