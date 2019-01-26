@@ -10,7 +10,7 @@ public class fixedOrbitMovement : MonoBehaviour
     public float orbitSpeed  = 1f;
     [Range(-1, 1)]
     public float rotationSpeed = 1f;
-
+    public bool rotateObejct = true;
     private Transform orbiterTransform;
     // Start is called before the first frame update
     void Start()
@@ -28,6 +28,7 @@ public class fixedOrbitMovement : MonoBehaviour
     {
         float t = Time.time;
         orbiterTransform.position = transform.position + new Vector3(Mathf.Cos(t * orbitSpeed), Mathf.Sin(t * orbitSpeed), 0) * radius;
-        orbiterTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, t * rotationSpeed * 360));
+        if(rotateObejct)
+            orbiterTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, t * rotationSpeed * 360));
     }
 }
