@@ -101,4 +101,4 @@ MonoBehaviour:
   - {fileID: 21300010, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
   - {fileID: 21300012, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
   - {fileID: 21300014, guid: 3517a2ee5aab1e34ab8ccfd4f153cb45, type: 3}
-  animationTime: 1.5
+  animationTime: 0.5

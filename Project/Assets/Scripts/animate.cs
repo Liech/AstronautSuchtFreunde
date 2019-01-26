@@ -36,6 +36,7 @@ public class animate : MonoBehaviour
             }
 
             sr.sprite = multisprite[curSprite++];
+            timeTrigger += timeStep;
         }
     }
 }
