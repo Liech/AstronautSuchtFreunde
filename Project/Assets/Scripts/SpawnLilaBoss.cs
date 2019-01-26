@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(gravityInfluence))]
 public class SpawnLilaBoss : MonoBehaviour
 {
+  public GameObject boss;
     public float radius;
   public bool showradius = false;
     // Start is called before the first frame update
@@ -23,7 +24,8 @@ public class SpawnLilaBoss : MonoBehaviour
       if (col[i].gameObject.GetComponent<LilaShip>() != null)
         return;
     }
-    Destroy(gameObject);
+    Instantiate(boss,transform);
+    Destroy(this);
     }
 
   public void OnDrawGizmos()
