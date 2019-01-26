@@ -15,6 +15,7 @@ public class parallax : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    if (GameObject.Find("Player") == null) return;
         transform.position = - GameObject.Find("Player").GetComponent<Transform>().position * strength;
     }
 }

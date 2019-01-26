@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  SphereOfInflucence: 420
+  SphereOfInflucence: 800
   home: {fileID: 0}
   speed: 60
   maxHomeDist: 333.97

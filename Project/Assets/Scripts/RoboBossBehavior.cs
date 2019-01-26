@@ -35,11 +35,11 @@ public class RoboBossBehavior : MonoBehaviour
     GetComponent<SpriteRenderer>().sprite = AwakeSprite;
     Life l = gameObject.AddComponent<Life>();
     gameObject.AddComponent<CollisionDamage>();
-    l.currentLife = 700;
-    l.MaxLife = 700;
+    l.currentLife = 400;
+    l.MaxLife = 400;
     awake = true;
     transform.parent.GetComponent<fixedOrbitMovement>().orbitSpeed *= 5;
-    orbit = transform.parent.GetComponent<fixedOrbitMovement>().radius;
+    orbit = transform.parent.GetComponent<fixedOrbitMovement>().radius - 20;
     StartCoroutine(spawnMinions());
   }
 
@@ -51,6 +51,7 @@ public class RoboBossBehavior : MonoBehaviour
     float Me = 360 - (transform.eulerAngles.z) + 90;
     if (Me > 180) Me -= 360;
     GameObject bullet = Instantiate(Minions, GameObject.Find("Universe/Robo Planet").transform);
+    bullet.GetComponent<Life>().currentLife = 1;
     Vector2 dir = new Vector2(Mathf.Sin(Mathf.Deg2Rad * Me), Mathf.Cos(Mathf.Deg2Rad * Me));
     bullet.transform.position = (Vector2)transform.position + dir * bullletStartDistance;
     bullet.GetComponent<Rigidbody2D>().velocity = (dir * bulletStartSpeed);
