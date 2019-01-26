@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowBot : MonoBehaviour
+public class RamBot : MonoBehaviour
 {
   public GameObject Target;
   public Collider2D SphereOfInflucence;
   public Transform home;
   public float speed = 10;
-  public float happyDistance = 10;
   public float maxHomeDist = 50;
   public float minHomeDist = 10;
   public bool draw = false;
@@ -18,6 +17,8 @@ public class FollowBot : MonoBehaviour
   void Start()
   {
     Target = GameObject.Find("Player");
+    SphereOfInflucence = GameObject.Find("Universe/Robo Planet").GetComponent<Collider2D>();
+    home = GameObject.Find("Universe/Robo Planet").transform;
 
   }
 
@@ -26,10 +27,8 @@ public class FollowBot : MonoBehaviour
   {
     //if (!Active) return;
     //if (!Target) return;
-
+    if (Target == null) return;
     Vector2 diff = Target.transform.position - transform.position;
-    Debug.Log(diff);
-    if ((diff.magnitude < happyDistance)) { diff = diff * -1; Debug.Log("wah"); }
 
     Vector2 homeDistance = home.transform.position - transform.position;
     if (homeDistance.magnitude > maxHomeDist)
@@ -65,8 +64,6 @@ public class FollowBot : MonoBehaviour
   public void OnDrawGizmos()
   {
     if (!draw) return;
-    Gizmos.color = new Color(1, 0, 0, 0.3f);
-    Gizmos.DrawSphere(transform.position, happyDistance);
     Gizmos.color = new Color(0, 1, 0, 0.3f);
     Gizmos.DrawSphere(home.transform.position, minHomeDist);
     Gizmos.color = new Color(0, 0, 1, 0.3f);
