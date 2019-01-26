@@ -5,7 +5,7 @@ using UnityEngine;
 public class gravityInfluence : MonoBehaviour
 {
     public float gravForce = 9.81f;
-
+    public AnimationCurve gravityCurve = AnimationCurve.Linear(0f,1f,1f,0f);
     private Transform t;
     private float planetRadius;
     private float infleneceRadius;
@@ -37,9 +37,13 @@ public class gravityInfluence : MonoBehaviour
         Rigidbody2D rbOther = other.GetComponent<Rigidbody2D>();
         if (rbOther)
         {
-            //float factor = Mathf.Min(1.0f,Mathf.Max(0.0f,(infleneceRadius - (dist - planetRadius)) / (infleneceRadius - planetRadius) ));
-            //Debug.Log(factor);
-            rbOther.AddForce(downDir.normalized  * gravForce);
+            float factor = 1.0f;
+            if (other.gameObject.name == "Player")
+            {
+                float relPos = (dist - planetRadius) / (infleneceRadius - planetRadius); // relPos = 1 if at outer rim, relPos = 0 if landed
+                factor = gravityCurve.Evaluate(relPos);
+            }
+            rbOther.AddForce(downDir.normalized  * gravForce * factor);
         }
 
         
