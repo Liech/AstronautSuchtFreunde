@@ -15,8 +15,6 @@ public class InitAsteroids : MonoBehaviour
     public float screenSize = 100;
     public float velocityScaling = 20;
 
-    public Vector2 center;
-
     public List<GameObject> asteroids;
 
     // Start is called before the first frame update
@@ -30,11 +28,14 @@ public class InitAsteroids : MonoBehaviour
             Transform t = newAsteroid.GetComponent<Transform>();
             t.localScale = Vector3.one * Random.Range(minScale, maxScale);
 
-            newAsteroid.GetComponent<AsteroidAsset>().center = center;
+            newAsteroid.GetComponent<AsteroidAsset>().center = transform.position;
             newAsteroid.GetComponent<AsteroidAsset>().screenSize = screenSize;
             newAsteroid.GetComponent<AsteroidAsset>().velocityScaling = velocityScaling;
 
         }
+
+        //var atmo = gameObject.transform.Find("atmosphäre");
+        //if ( atmo ) atmo.localScale = new Vector3(screenSize / 4.0f, screenSize / 4.0f, 1);
     }
 
     // Update is called once per frame
