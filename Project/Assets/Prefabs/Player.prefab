@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 425961265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 9155647450436422894}
   m_RootOrder: 3
@@ -79,6 +79,141 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &874110888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874110889}
+  - component: {fileID: 874110890}
+  m_Layer: 0
+  m_Name: BeamCone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &874110889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874110888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.2, y: 1.92, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9155647450436422894}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!120 &874110890
+LineRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874110888}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -311864281
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 10, y: 0, z: 0}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 5
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.047445256
+        value: 0.0944882
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.71716624
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 0, g: 0.8032925, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 5
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
 --- !u!1 &1793743354
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +372,7 @@ GameObject:
   - component: {fileID: 9155647450436422889}
   - component: {fileID: 2678966306132299950}
   - component: {fileID: 4377027865992566421}
+  - component: {fileID: 9155647448985673138}
   m_Layer: 0
   m_Name: Player
   m_TagString: GravityInfluenced
@@ -259,6 +395,7 @@ Transform:
   - {fileID: 5084086924662558197}
   - {fileID: 1793743355}
   - {fileID: 425961266}
+  - {fileID: 874110889}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -297,6 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   startingVelocity: {x: 30, y: 0, z: 0}
+  InPlanetInfluence: []
 --- !u!212 &9155647450436422890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -332,7 +470,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -42202681
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c040fe27e4644af4eba457a54d022715, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -588,6 +726,18 @@ MonoBehaviour:
   Bullet: {fileID: 1768278724480458840, guid: 5223b20efd13b0049be9c354f1aa5b73, type: 3}
   bullletStartDistance: 10
   bulletStartSpeed: 70
+--- !u!114 &9155647448985673138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155647450436422895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc9c8ae64757544296e6241144b5323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5080469695125202205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -709,11 +859,6 @@ PrefabInstance:
         type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 198064713177833144, guid: bab2f13eaaf31454aafa3d30787c5b15,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199908070248919538, guid: bab2f13eaaf31454aafa3d30787c5b15,
         type: 3}
@@ -849,11 +994,6 @@ PrefabInstance:
         type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 198064713177833144, guid: bab2f13eaaf31454aafa3d30787c5b15,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199908070248919538, guid: bab2f13eaaf31454aafa3d30787c5b15,
         type: 3}

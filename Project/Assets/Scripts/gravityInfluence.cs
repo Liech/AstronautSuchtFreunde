@@ -39,6 +39,15 @@ public class gravityInfluence : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.name == "Player")
+            other.gameObject.GetComponent<move>().InPlanetInfluence.Add(this.gameObject);
+        //Debug.Log("entered");
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player")
+            other.gameObject.GetComponent<move>().InPlanetInfluence.Remove(this.gameObject);
         //Debug.Log("entered");
     }
 

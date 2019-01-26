@@ -7,6 +7,7 @@ public class move : MonoBehaviour
 
     public float speed;
     public Vector3 startingVelocity;
+    public List<GameObject> InPlanetInfluence;
 
     private Rigidbody2D rb;
 
