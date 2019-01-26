@@ -52,19 +52,19 @@ public class HomeBase : MonoBehaviour
         switch (spec)
         {
             case BewohnerFarbe.Farbe.grün:
-                if (Ngrün == 0) { if (numberOfSpecs < 3) upgradeUI.SetActive(true); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
+                if (Ngrün == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
                 Ngrün++;
                 break;
             case BewohnerFarbe.Farbe.lila:
-                if (Nlila == 0) { if (numberOfSpecs < 3) upgradeUI.SetActive(true); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
+                if (Nlila == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
                 Nlila++;
                 break;
             case BewohnerFarbe.Farbe.robo:
-                if (Nrobo == 0) { if (numberOfSpecs < 3) upgradeUI.SetActive(true); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
+                if (Nrobo == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
                 Nrobo++;
                 break;
             case BewohnerFarbe.Farbe.cat:
-                if (Ncat == 0) { if (numberOfSpecs < 3) upgradeUI.SetActive(true); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
+                if (Ncat == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
                 Ncat++;
                 break;
             default:

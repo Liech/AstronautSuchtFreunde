@@ -73,6 +73,10 @@ public class Beam : MonoBehaviour
                         lastBeamdown = Time.time;
                         planets[0].GetComponent<HomeBase>().addDude(dude.GetComponent<BewohnerFarbe>().farbe);
                     }
+                } else
+                {
+                    LineRenderer lr = GameObject.Find("BeamCone").GetComponent<LineRenderer>();
+                    lr.enabled = false;
                 }
             }
 
