@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8bbe52764f93b42aeb68f90284595f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2500
+  radius: 2800
   orbitSpeed: 0.01
   rotationSpeed: 1
   rotateObejct: 0
@@ -201,12 +201,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3000
+  m_Radius: 2800
 --- !u!1001 &2133711585232533852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -423,10 +423,6 @@ PrefabInstance:
     - target: {fileID: 91927195, guid: 279b0c1283f2af841ad32250e18b6ef3, type: 3}
       propertyPath: m_LocalScale.z
       value: 337.47528
-      objectReference: {fileID: 0}
-    - target: {fileID: 91927193, guid: 279b0c1283f2af841ad32250e18b6ef3, type: 3}
-      propertyPath: m_Radius
-      value: 5.22
       objectReference: {fileID: 0}
     - target: {fileID: 91927191, guid: 279b0c1283f2af841ad32250e18b6ef3, type: 3}
       propertyPath: gravForce
