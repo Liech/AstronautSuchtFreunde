@@ -155,8 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dfba35fab43a84b83ef5cd099c4094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 0}
-  radius: 0
+  boss: {fileID: 8249630699375626211, guid: 1c1a410e16f995f4bba4eff729637363, type: 3}
+  radius: 339.1
   showradius: 0
 --- !u!1 &207880122
 GameObject:

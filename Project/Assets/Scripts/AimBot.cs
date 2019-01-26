@@ -64,7 +64,9 @@ public class AimBot : MonoBehaviour
       settings.startColor = new ParticleSystem.MinMaxGradient(bulletColor);
       if (FireSound != null)
       {
-        Instantiate(FireSound, gameObject.transform);
+        GameObject g = Instantiate(FireSound, gameObject.transform);
+        g.transform.position = transform.position;
+
       }
       StartCoroutine(Reload());
     }
