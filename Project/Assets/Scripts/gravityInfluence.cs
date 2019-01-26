@@ -23,6 +23,20 @@ public class gravityInfluence : MonoBehaviour
         
     }
 
+    public Vector2 getForce(Vector3 pos)
+    {
+        if ((GetComponent<Transform>().position - pos).magnitude < GetComponent<CircleCollider2D>().radius * t.lossyScale.x)
+        {
+            Vector2 downDir = t.position - pos;
+            float dist = downDir.magnitude;
+            float relPos = (dist - planetRadius) / (infleneceRadius - planetRadius);
+            float factor = gravityCurve.Evaluate(relPos);
+            return downDir.normalized * gravForce * factor;
+        }
+        else
+            return Vector2.zero;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("entered");
