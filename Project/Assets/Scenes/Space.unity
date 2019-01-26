@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44057724, g: 0.4892069, b: 0.56934965, a: 1}
+  m_IndirectSpecularColor: {r: 0.44057652, g: 0.48920614, b: 0.5693484, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -342,8 +342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numAsteroids: 25
-  minScale: 1
-  maxScale: 3
+  minScale: 2
+  maxScale: 5
   screenSize: 75
   velocityScaling: 20
   center: {x: 100, y: 300}
@@ -846,11 +846,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numAsteroids: 25
-  minScale: 1
-  maxScale: 3
+  minScale: 2
+  maxScale: 5
   screenSize: 200
   velocityScaling: 10
-  center: {x: -600, y: 150}
+  center: {x: -400, y: 150}
   asteroids:
   - {fileID: 1463526432}
   - {fileID: 1883303373}
@@ -1677,8 +1677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numAsteroids: 10
-  minScale: 1
-  maxScale: 3
+  minScale: 2
+  maxScale: 5
   screenSize: 50
   velocityScaling: 10
   center: {x: 300, y: 600}
@@ -1835,7 +1835,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -1861,7 +1861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125329918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -27.5, y: 51.9, z: -70}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
