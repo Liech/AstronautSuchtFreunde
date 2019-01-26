@@ -25,22 +25,14 @@ public class InitAsteroids : MonoBehaviour
         
         for (int i = 0; i < numAsteroids; i++)
         {
-            //AsteroidAsset newAsteroid = new AsteroidAsset();
-            //asteroids.Add(newAsteroid);
-            //Instantiate(newAsteroid);
-            //asteroids.Add(Instantiate(prefab));
 
-            GameObject newAsteroid = asteroids[i % asteroids.Capacity];
-            
+            GameObject newAsteroid = Instantiate(asteroids[i % asteroids.Capacity], this.GetComponent<Transform>());
             Transform t = newAsteroid.GetComponent<Transform>();
             t.localScale = Vector3.one * Random.Range(minScale, maxScale);
-            //Instantiate(newStar, this.GetComponent<Transform>());
 
-            GameObject obj = Instantiate(newAsteroid);
-
-            obj.GetComponent<AsteroidAsset>().center = center;
-            obj.GetComponent<AsteroidAsset>().screenSize = screenSize;
-            obj.GetComponent<AsteroidAsset>().velocityScaling = velocityScaling;
+            newAsteroid.GetComponent<AsteroidAsset>().center = center;
+            newAsteroid.GetComponent<AsteroidAsset>().screenSize = screenSize;
+            newAsteroid.GetComponent<AsteroidAsset>().velocityScaling = velocityScaling;
 
         }
     }
