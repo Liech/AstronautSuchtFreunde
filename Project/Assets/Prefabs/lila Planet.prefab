@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 639896069}
   - component: {fileID: 639896068}
   - component: {fileID: 639896067}
+  - component: {fileID: 3775453682352987482}
   - component: {fileID: 2636895882920615191}
   m_Layer: 0
   m_Name: lila Planet
@@ -149,6 +150,19 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   playerOrbitHeight: 150
+--- !u!114 &3775453682352987482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639896066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c631de612c59fb9408775d349132c95c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0.8
 --- !u!114 &2636895882920615191
 MonoBehaviour:
   m_ObjectHideFlags: 0

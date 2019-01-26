@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 91927193}
   - component: {fileID: 91927191}
   - component: {fileID: 4381394341982132419}
+  - component: {fileID: 6689598117395580380}
   m_Layer: 0
   m_Name: Robo Planet
   m_TagString: Untagged
@@ -164,6 +165,19 @@ MonoBehaviour:
   boss: {fileID: 0}
   radius: 0
   showradius: 0
+--- !u!114 &6689598117395580380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91927190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c631de612c59fb9408775d349132c95c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: -0.6
 --- !u!1 &207880122
 GameObject:
   m_ObjectHideFlags: 0
