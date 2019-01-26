@@ -68,6 +68,7 @@ public class Beam : MonoBehaviour
                         dude.transform.position = hitposOut;
                         dude.GetComponent<bewohnerMovement>().planetPos = planets[0].transform.position;
                         dude.GetComponent<bewohnerMovement>().jumpStrength = 1.0f;
+                        dude.GetComponent<bewohnerMovement>().moveSpeed = 5.0f;
                         dude.SetActive(true);
                         lastBeamdown = Time.time;
                     }

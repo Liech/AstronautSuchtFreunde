@@ -17,6 +17,8 @@ public class HomeBase : MonoBehaviour
         {
             t = Time.time + 10f;
             other.gameObject.GetComponent<Beam>().atHome = true;
+            var UI = GameObject.Find("UICanvas");
+            //UI.GetComponentInChildren<>().text = "Home Sweet Home";
         }
     }
 
@@ -26,6 +28,8 @@ public class HomeBase : MonoBehaviour
         {
             t = float.MaxValue;
             other.gameObject.GetComponent<Beam>().atHome = false;
+            var UI = GameObject.Find("UICanvas");
+            //UI.GetComponentInChildren<TextMesh>().text = "";
         }
     }
 
@@ -38,7 +42,6 @@ public class HomeBase : MonoBehaviour
             other.gameObject.GetComponent<Life>().getDamage(-10);
             t += 2f;
         }
-
 
     }
 

@@ -31,7 +31,7 @@ public class move : MonoBehaviour
         
         if (System.Math.Abs(moveHorizontal) + System.Math.Abs(moveVertical) > 0.1)
         {
-            Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
+            Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f)*GetComponent<Systems>().DriveFactor;
             transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(Vector3.back, movement));
             if (Input.GetButton("Fire1"))
             {
