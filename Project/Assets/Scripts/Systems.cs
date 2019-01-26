@@ -12,8 +12,10 @@ public class Systems : MonoBehaviour
     int healthLVL = 0;
     int driveLVL = 0;
 
-    List<float> driveFactors = new List<float> {1.0f, 1.5f, 2.3f,3.0f }; 
-    List<int> healthAmounts = new List<int> {100, 150, 220, 300}; 
+    List<float> driveFactors = new List<float> { 1.0f, 1.5f, 2.3f, 3.0f };
+    List<int> healthAmounts = new List<int> { 100, 150, 220, 300 };
+
+    float totalTime = 0; {get} 
 
     public void lvlUpDrive()
     {
@@ -42,7 +44,7 @@ public class Systems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        totalTime = Time.time;
     }
 
     // Update is called once per frame

@@ -48,6 +48,7 @@ public class HomeBase : MonoBehaviour
 
     public void addDude(BewohnerFarbe.Farbe spec)
     {
+        int numberOfSpecs = (Ngrün > 0 ? 1 : 0) + (Nlila > 0 ? 1 : 0) + (Nrobo > 0 ? 1 : 0) + (Ncat > 0 ? 1 : 0);
         switch (spec)
         {
             case BewohnerFarbe.Farbe.grün:
