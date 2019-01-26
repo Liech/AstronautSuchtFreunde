@@ -9,6 +9,7 @@ public class HomeBase : MonoBehaviour
     int Nlila = 0;
     int Ncat = 0;
     int Nrobo = 0;
+    public GameObject upgradeUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,19 +51,19 @@ public class HomeBase : MonoBehaviour
         switch (spec)
         {
             case BewohnerFarbe.Farbe.grün:
-                if (Ngrün == 0) GameObject.Find("UICanvas").transform.Find("UpgradeUI").gameObject.SetActive(true);
+                if (Ngrün == 0) upgradeUI.SetActive(true);
                 Ngrün++;
                 break;
             case BewohnerFarbe.Farbe.lila:
-                if (Nlila == 0) GameObject.Find("UICanvas").transform.Find("UpgradeUI").gameObject.SetActive(true);
+                if (Nlila == 0) upgradeUI.SetActive(true);
                 Nlila++;
                 break;
             case BewohnerFarbe.Farbe.robo:
-                if (Nrobo == 0) GameObject.Find("UICanvas").transform.Find("UpgradeUI").gameObject.SetActive(true);
+                if (Nrobo == 0) upgradeUI.SetActive(true);
                 Nrobo++;
                 break;
             case BewohnerFarbe.Farbe.cat:
-                if (Ncat == 0) GameObject.Find("UICanvas").transform.Find("UpgradeUI").gameObject.SetActive(true);
+                if (Ncat == 0) upgradeUI.SetActive(true);
                 Ncat++;
                 break;
             default:

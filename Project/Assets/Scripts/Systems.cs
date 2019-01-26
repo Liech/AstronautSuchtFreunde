@@ -12,13 +12,14 @@ public class Systems : MonoBehaviour
     int healthLVL = 0;
     int driveLVL = 0;
 
-    List<float> driveFactors = new List<float> {1.0f, 1.5f, 2.5f}; 
-    List<int> healthAmounts = new List<int> {100, 150, 220}; 
+    List<float> driveFactors = new List<float> {1.0f, 1.5f, 2.3f,3.0f }; 
+    List<int> healthAmounts = new List<int> {100, 150, 220, 300}; 
 
     public void lvlUpDrive()
     {
         driveLVL += 1;
         DriveFactor = driveFactors[driveLVL];
+        Debug.Log("leveled up drive to " + driveLVL.ToString());
     }
 
     public void lvlUpHealth()
@@ -27,12 +28,15 @@ public class Systems : MonoBehaviour
         Health = healthAmounts[healthLVL];
         GetComponent<Life>().MaxLife = Health;
         GetComponent<Life>().currentLife = Health;
+        Debug.Log("leveled up health to " + healthLVL.ToString());
     }
 
     public void lvlUpWeapons()
     {
         weaponLVL += 1;
         WeaponLvL = weaponLVL;
+        Debug.Log("leveled up weapons to " + weaponLVL.ToString());
+
     }
 
     // Start is called before the first frame update
