@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 91927193}
   - component: {fileID: 91927191}
   - component: {fileID: 1334022695660815519}
+  - component: {fileID: 3569241518198237470}
   m_Layer: 0
   m_Name: "gr\xFCner Planet"
   m_TagString: Untagged
@@ -169,6 +170,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 0.4
+--- !u!114 &3569241518198237470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91927190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7d12b1e2bb0804eb888bbd83271cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 6421334348511706185}
+  radius: 387.67
+  showradius: 0
 --- !u!1 &207880122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1514,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb5daab1cad0aef4891724b845f26f43, type: 3}
+--- !u!1 &6421334348511706185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7701112947254181729, guid: eb5daab1cad0aef4891724b845f26f43,
+    type: 3}
+  m_PrefabInstance: {fileID: 3729808411491222312}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6421334348511706186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7701112947254181730, guid: eb5daab1cad0aef4891724b845f26f43,
