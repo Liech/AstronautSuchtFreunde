@@ -11,7 +11,7 @@ public class burningDamage : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (Time.time > tick)
+        if (Time.time > tick && other.GetComponent<Life>())
         {
             tick += 1f;
             other.GetComponent<Life>().getDamage(damagePerSecond);
@@ -21,11 +21,13 @@ public class burningDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+    if (other.GetComponent<SpriteRenderer>())
         other.GetComponent<SpriteRenderer>().color = burnColor;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        other.GetComponent<SpriteRenderer>().color = Color.white;
+    if (other.GetComponent<SpriteRenderer>())
+      other.GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

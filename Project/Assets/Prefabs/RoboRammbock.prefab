@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 2147402746559037225}
   - component: {fileID: 1722459536386535396}
   - component: {fileID: 6234034286928957902}
+  - component: {fileID: 6169240419250309686}
   m_Layer: 12
   m_Name: RoboRammbock
   m_TagString: Untagged
@@ -179,6 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 300
   MaxLife: 300
+  flashColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!114 &1722459536386535396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,9 +207,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  SphereOfInflucence: {fileID: 0}
+  SphereOfInflucence: 420
   home: {fileID: 0}
   speed: 60
   maxHomeDist: 333.97
   minHomeDist: -121.8
   draw: 0
+--- !u!114 &6169240419250309686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187562650270540361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78867995295e2ab4e90275d7d787ee21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
