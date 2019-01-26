@@ -22,7 +22,7 @@ public class keepRotation : MonoBehaviour
     void Update()
     {
         transform.position = player.transform.position;
-        transform.Translate(new Vector3(0, 0, -40 - player.GetComponent<Rigidbody2D>().velocity.magnitude*0.5f));
+        transform.Translate(new Vector3(0, 0, -70 - player.GetComponent<Rigidbody2D>().velocity.magnitude*0.5f));
     }
     
 }
