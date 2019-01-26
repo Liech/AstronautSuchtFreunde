@@ -132,7 +132,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 1
 --- !u!114 &2646735390298087964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,11 +148,15 @@ MonoBehaviour:
   Target: {fileID: 0}
   Bullet: {fileID: 1768278724480458840, guid: 5223b20efd13b0049be9c354f1aa5b73, type: 3}
   SphereOfInflucence: 200
+  FireSound: {fileID: 864679850256827423, guid: c92368627b1e9af418b40ae83fa032ab,
+    type: 3}
+  firepitch: 0
   startVelocity: {x: 0, y: 0, z: 0}
   RotationSpeed: 7
   reloadTime: 2
   bullletStartDistance: 50
   bulletStartSpeed: 40
+  bulletColor: {r: 1, g: 0, b: 1, a: 1}
 --- !u!50 &7187562650270540364
 Rigidbody2D:
   serializedVersion: 4

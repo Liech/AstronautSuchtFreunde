@@ -148,6 +148,8 @@ MonoBehaviour:
   Target: {fileID: 0}
   Bullet: {fileID: 1768278724480458840, guid: 5223b20efd13b0049be9c354f1aa5b73, type: 3}
   SphereOfInflucence: 200
+  FireSound: {fileID: 864679850256827423, guid: c92368627b1e9af418b40ae83fa032ab,
+    type: 3}
   startVelocity: {x: 0, y: 0, z: 0}
   RotationSpeed: 30
   reloadTime: 0.1

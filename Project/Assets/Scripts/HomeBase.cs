@@ -50,19 +50,19 @@ public class HomeBase : MonoBehaviour
         switch (spec)
         {
             case BewohnerFarbe.Farbe.grün:
-                if (Ngrün == 0) GameObject.Find("UICanvas").transform.FindChild("UpgradeUI").gameObject.SetActive(true);
+                if (Ngrün == 0) GameObject.Find("UICanvas").transform.Find("UpgradeUI").gameObject.SetActive(true);
                 Ngrün++;
                 break;
             case BewohnerFarbe.Farbe.lila:
-                if (Nlila == 0) GameObject.Find("UICanvas").transform.FindChild("UpgradeUI").gameObject.SetActive(true);
+                if (Nlila == 0) GameObject.Find("UICanvas").transform.Find("UpgradeUI").gameObject.SetActive(true);
                 Nlila++;
                 break;
             case BewohnerFarbe.Farbe.robo:
-                if (Nrobo == 0) GameObject.Find("UICanvas").transform.FindChild("UpgradeUI").gameObject.SetActive(true);
+                if (Nrobo == 0) GameObject.Find("UICanvas").transform.Find("UpgradeUI").gameObject.SetActive(true);
                 Nrobo++;
                 break;
             case BewohnerFarbe.Farbe.cat:
-                if (Ncat == 0) GameObject.Find("UICanvas").transform.FindChild("UpgradeUI").gameObject.SetActive(true);
+                if (Ncat == 0) GameObject.Find("UICanvas").transform.Find("UpgradeUI").gameObject.SetActive(true);
                 Ncat++;
                 break;
             default:

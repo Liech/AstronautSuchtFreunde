@@ -180,7 +180,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   MaxLife: 100
-  flashColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!114 &1722459536386535396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21e15615f042bb4aa7f3e836e2f1aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
+  Target: {fileID: 864679850256827423, guid: c92368627b1e9af418b40ae83fa032ab, type: 3}
   SphereOfInflucence: 800
   home: {fileID: 0}
   speed: 60
