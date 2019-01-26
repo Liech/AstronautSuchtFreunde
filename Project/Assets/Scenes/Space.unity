@@ -1282,12 +1282,12 @@ PrefabInstance:
     - target: {fileID: 8289528925981020577, guid: 05efdceff749cb3469c6b6992aa2631b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1127
+      value: -790
       objectReference: {fileID: 0}
     - target: {fileID: 8289528925981020577, guid: 05efdceff749cb3469c6b6992aa2631b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 53
+      value: -345
       objectReference: {fileID: 0}
     - target: {fileID: 4870656329785050092, guid: 05efdceff749cb3469c6b6992aa2631b,
         type: 3}
@@ -2014,17 +2014,17 @@ PrefabInstance:
     - target: {fileID: 7112265939452653866, guid: fb8fa2aeba464a4459636d270a3a3045,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7112265939452653866, guid: fb8fa2aeba464a4459636d270a3a3045,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 76.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7112265939452653866, guid: fb8fa2aeba464a4459636d270a3a3045,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7112265939452653866, guid: fb8fa2aeba464a4459636d270a3a3045,
         type: 3}
@@ -2065,11 +2065,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112265939452653867, guid: fb8fa2aeba464a4459636d270a3a3045,
-        type: 3}
-      propertyPath: field of view
-      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb8fa2aeba464a4459636d270a3a3045, type: 3}
@@ -2164,19 +2159,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 9155647448985673135}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9155647448985673145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9155647448985673137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d23c4e93a12a9284bb082afbc251ccc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 3000
 --- !u!114 &9155647448985673147
 MonoBehaviour:
   m_ObjectHideFlags: 0
