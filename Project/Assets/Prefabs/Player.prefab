@@ -384,6 +384,7 @@ GameObject:
   - component: {fileID: 9155647448985673138}
   - component: {fileID: 4563947159551492284}
   - component: {fileID: 5122698479144434265}
+  - component: {fileID: 3826177729840174463}
   m_Layer: 0
   m_Name: Player
   m_TagString: GravityInfluenced
@@ -707,7 +708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9372bc0921027d5458b6ddfe45856846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageFactor: 0.4
 --- !u!114 &2678966306132299950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,6 +767,7 @@ MonoBehaviour:
   WeaponLvL: 1
   Health: 100
   DriveFactor: 1
+  totalTime: 0
 --- !u!114 &5122698479144434265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,6 +781,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 3000
+--- !u!114 &3826177729840174463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155647450436422895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5ad561b5ae2bd4eab56a5cd81b45c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 9155647450436422894}
 --- !u!1001 &5080469695125202205
 PrefabInstance:
   m_ObjectHideFlags: 0
