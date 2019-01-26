@@ -17,7 +17,7 @@ public class Life : MonoBehaviour
   void Update()
   {
     if (currentLife <= 0)
-    {
+    {      
       GameObject g = Instantiate(Resources.Load("DeathExplosion", typeof(GameObject))) as GameObject;
       g.transform.position = transform.position;
       Destroy(gameObject);

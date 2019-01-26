@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9155647450436422893}
   - component: {fileID: 9155647450436422889}
   - component: {fileID: 2678966306132299950}
+  - component: {fileID: 4377027865992566421}
   m_Layer: 0
   m_Name: Player
   m_TagString: GravityInfluenced
@@ -347,6 +348,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   MaxLife: 100
+--- !u!114 &4377027865992566421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155647450436422895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21c85a7490d983d448447393066b855b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reloadTime: 0.4
+  Bullet: {fileID: 1768278724480458840, guid: 5223b20efd13b0049be9c354f1aa5b73, type: 3}
+  bullletStartDistance: 10
+  bulletStartSpeed: 70
 --- !u!1001 &5080469695125202205
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -198,6 +198,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: GravityInfluenced
       objectReference: {fileID: 0}
+    - target: {fileID: 4372524797184120892, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -206,12 +211,12 @@ PrefabInstance:
     - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 65
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -68.96066
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
         type: 3}
@@ -253,6 +258,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2714913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2714913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372524797184120891, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2714913
+      objectReference: {fileID: 0}
     - target: {fileID: 4372524797184120893, guid: 802478e9bb341f8448857a6bbd380375,
         type: 3}
       propertyPath: bulletStartSpeed
@@ -262,6 +282,16 @@ PrefabInstance:
         type: 3}
       propertyPath: bullletStartDistance
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726276343557643604, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -42202681
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726276343557643604, guid: 802478e9bb341f8448857a6bbd380375,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 802478e9bb341f8448857a6bbd380375, type: 3}
@@ -484,7 +514,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1853477185}
   m_Lens:
-    FieldOfView: 60
+    FieldOfView: 74
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -497,7 +527,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926187568}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -83.7, y: -120.2, z: -70}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -957,7 +987,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 60
+  field of view: 74
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -1298,6 +1328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377027865992566421, guid: aeaaa828d7b57144797ba402998d8350,
+        type: 3}
+      propertyPath: bulletStartSpeed
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeaaa828d7b57144797ba402998d8350, type: 3}

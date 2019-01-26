@@ -13,9 +13,15 @@ public class ShowLife : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {    
-    int Index = (int)(10.0f*((float)Target.currentLife / (float)Target.MaxLife));
+	void Update () {
+
+    int Index;
+    if (Target == null)
+      Index = 0;
+    else
+      Index = (int)(10.0f*((float)Target.currentLife / (float)Target.MaxLife));
     if (Index < 0) Index = 0;    
+    
     GetComponent<Image>().sprite = Lifes[Index];
  	}
 }
