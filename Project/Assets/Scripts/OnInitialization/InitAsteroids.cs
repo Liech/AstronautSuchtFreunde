@@ -7,9 +7,9 @@ public class InitAsteroids : MonoBehaviour
     [Range(1, 1000)]
     public int numAsteroids = 10;
 
-    [Range(1, 2)]
+    [Range(1, 5)]
     public float minScale = 1.5f;
-    [Range(2, 5)]
+    [Range(2, 20)]
     public float maxScale = 3;
 
     public float screenSize = 100;

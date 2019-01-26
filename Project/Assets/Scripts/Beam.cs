@@ -20,7 +20,7 @@ public class Beam : MonoBehaviour
     {
         if (Input.GetButton("Fire3"))
         {
-            if (!atHome)
+            if (!atHome && storedDudes.Count < 5)
             {
                 LineRenderer lr = GameObject.Find("BeamCone").GetComponent<LineRenderer>();
                 var planets = GetComponent<move>().InPlanetInfluence;
