@@ -27,6 +27,7 @@ public class SpawnCatBoss : MonoBehaviour
     GameObject g = Instantiate(boss);
     g.transform.position = transform.position;
     g.transform.GetChild(0).GetComponent<rotationobject>().Target = gameObject;
+    Instantiate(Resources.Load("BossEntry", typeof(GameObject)));
     Destroy(this);
     }
 

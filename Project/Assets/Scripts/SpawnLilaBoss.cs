@@ -25,6 +25,7 @@ public class SpawnLilaBoss : MonoBehaviour
         return;
     }
     Instantiate(boss,transform);
+    GameObject g = Instantiate(Resources.Load("BossEntry", typeof(GameObject))) as GameObject;
     Destroy(this);
     }
 

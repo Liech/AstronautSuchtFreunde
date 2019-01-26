@@ -58,9 +58,13 @@ public class AimBot : MonoBehaviour
       Vector2 dir = new Vector2(Mathf.Sin(Mathf.Deg2Rad * Me), Mathf.Cos(Mathf.Deg2Rad * Me));
       bullet.transform.position = (Vector2)transform.position + dir  * bullletStartDistance;
       bullet.GetComponent<Rigidbody2D>().velocity = (dir * bulletStartSpeed);
+      if (bullet.transform.childCount >= 2)
       bullet.transform.GetChild(1).GetComponent<SpriteRenderer>().color = bulletColor;
-      ParticleSystem.MainModule settings = bullet.transform.GetChild(0).GetComponent<ParticleSystem>().main;
-      settings.startColor = new ParticleSystem.MinMaxGradient(bulletColor);
+      if (bullet.transform.childCount >= 1)
+      {
+        ParticleSystem.MainModule settings = bullet.transform.GetChild(0).GetComponent<ParticleSystem>().main;
+        settings.startColor = new ParticleSystem.MinMaxGradient(bulletColor);
+      }
 
       StartCoroutine(Reload());
     }

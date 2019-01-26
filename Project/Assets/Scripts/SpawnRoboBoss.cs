@@ -25,6 +25,7 @@ public class SpawnRoboBoss : MonoBehaviour
         return;
     }
     boss.GetComponent<RoboBossBehavior>().WakeUp();
+    GameObject g = Instantiate(Resources.Load("BossEntry", typeof(GameObject))) as GameObject;
     Destroy(this);
     }
 
