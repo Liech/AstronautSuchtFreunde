@@ -29,7 +29,7 @@ public class AimBot : MonoBehaviour
   {
     if (Target != null) 
     Active = (Target.transform.position - transform.position).magnitude < SphereOfInflucence;
-    Debug.Log((Target.transform.position - transform.position).magnitude);
+    //Debug.Log((Target.transform.position - transform.position).magnitude);
     if (!Active)
     {
       //transform.rotation = Quaternion.identity;

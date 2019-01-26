@@ -30,7 +30,7 @@ public class FollowBot : MonoBehaviour
     //if (!Target) return;
 
     Vector2 diff = Target.transform.position - transform.position;
-    Debug.Log(diff);
+    //Debug.Log(diff);
     if ((diff.magnitude < happyDistance)) { diff = diff * -1; Debug.Log("wah"); }
 
     Vector2 homeDistance = home.transform.position - transform.position;
