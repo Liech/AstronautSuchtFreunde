@@ -719,7 +719,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   MaxLife: 100
-  flashColor: {r: 0.3537736, g: 0.3537736, b: 1, a: 1}
 --- !u!114 &4377027865992566421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,6 +747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc9c8ae64757544296e6241144b5323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storedDudes: []
+  atHome: 0
 --- !u!1001 &5080469695125202205
 PrefabInstance:
   m_ObjectHideFlags: 0

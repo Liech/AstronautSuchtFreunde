@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1925280695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877889200346189840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a6b202cabf84a42ae48f94e7baec61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4877889201512760720
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,51 +252,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 49.49729
       objectReference: {fileID: 0}
-    - target: {fileID: 7807302805521870120, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboMondOrbit
-      objectReference: {fileID: 0}
-    - target: {fileID: 5883987921299299288, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: radius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6784629606026352443, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.36085683
-      objectReference: {fileID: 0}
-    - target: {fileID: 6784629606026352443, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.93262124
-      objectReference: {fileID: 0}
-    - target: {fileID: 6784629606026352443, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.99310297
-      objectReference: {fileID: 0}
-    - target: {fileID: 6784629606026352443, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.117245406
-      objectReference: {fileID: 0}
-    - target: {fileID: 6784629606026352443, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.28651
-      objectReference: {fileID: 0}
-    - target: {fileID: 6784629606026352443, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.28651
-      objectReference: {fileID: 0}
-    - target: {fileID: 6784629606026352443, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.28651
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbc402a63d8f111478da988c561b6094, type: 3}
 --- !u!4 &3280740935262846417 stripped
@@ -302,11 +269,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 91927195, guid: 279b0c1283f2af841ad32250e18b6ef3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2999.1492
+      value: 2999.7388
       objectReference: {fileID: 0}
     - target: {fileID: 91927195, guid: 279b0c1283f2af841ad32250e18b6ef3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 71.44397
+      value: 39.595844
       objectReference: {fileID: 0}
     - target: {fileID: 91927195, guid: 279b0c1283f2af841ad32250e18b6ef3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -693,6 +660,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 102f5b758b1d5fc43ac84dee52b58ccb, type: 3}
+--- !u!1 &4877889200346189840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1857866302, guid: 102f5b758b1d5fc43ac84dee52b58ccb,
+    type: 3}
+  m_PrefabInstance: {fileID: 4877889201127135790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4877889200346189933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1857866307, guid: 102f5b758b1d5fc43ac84dee52b58ccb,
@@ -853,20 +826,46 @@ PrefabInstance:
     - target: {fileID: 2833569765960134764, guid: 84c187f1f0829eb43b15600d8643c859,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 210.09457
+      value: 242.95639
       objectReference: {fileID: 0}
     - target: {fileID: 2833569765960134764, guid: 84c187f1f0829eb43b15600d8643c859,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -149.74736
+      value: -86.81123
       objectReference: {fileID: 0}
     - target: {fileID: 2833569765960134762, guid: 84c187f1f0829eb43b15600d8643c859,
         type: 3}
       propertyPath: SphereOfInflucence
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3040714603783725854, guid: 84c187f1f0829eb43b15600d8643c859,
+        type: 3}
+      propertyPath: home
+      value: 
+      objectReference: {fileID: 4877889200892367870}
+    - target: {fileID: 9055079318869165622, guid: 84c187f1f0829eb43b15600d8643c859,
+        type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 4877889200892367867}
+    - target: {fileID: 9055079318869165622, guid: 84c187f1f0829eb43b15600d8643c859,
+        type: 3}
+      propertyPath: home
+      value: 
+      objectReference: {fileID: 4877889200892367870}
+    - target: {fileID: 9078031428020679495, guid: 84c187f1f0829eb43b15600d8643c859,
+        type: 3}
+      propertyPath: home
+      value: 
+      objectReference: {fileID: 4877889200892367870}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c187f1f0829eb43b15600d8643c859, type: 3}
+--- !u!1 &4877889200892367867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 639896066, guid: 84c187f1f0829eb43b15600d8643c859,
+    type: 3}
+  m_PrefabInstance: {fileID: 4877889201527544313}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4877889200892367870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 639896071, guid: 84c187f1f0829eb43b15600d8643c859,
@@ -880,11 +879,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4877889201512760734}
     m_Modifications:
-    - target: {fileID: 8519996929477538598, guid: e66bb177d06e3f94cbe0ca9e1a79d7b7,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboMondOrbit
-      objectReference: {fileID: 0}
     - target: {fileID: 817503909887367938, guid: e66bb177d06e3f94cbe0ca9e1a79d7b7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -940,15 +934,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8519996929477538598, guid: e66bb177d06e3f94cbe0ca9e1a79d7b7,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboMondOrbit
+      objectReference: {fileID: 0}
     - target: {fileID: 4308262567733643599, guid: e66bb177d06e3f94cbe0ca9e1a79d7b7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245.2507
+      value: 246.46231
       objectReference: {fileID: 0}
     - target: {fileID: 4308262567733643599, guid: e66bb177d06e3f94cbe0ca9e1a79d7b7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.344414
+      value: 16.288935
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e66bb177d06e3f94cbe0ca9e1a79d7b7, type: 3}

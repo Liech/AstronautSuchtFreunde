@@ -7,7 +7,7 @@ public class Life : MonoBehaviour
 {
     public int currentLife;
     public int MaxLife;
-    public Color flashColor = Color.blue;
+    private Color flashColor = Color.blue;
 
     private SpriteRenderer sr;
     // Start is called before the first frame update
@@ -33,6 +33,12 @@ public class Life : MonoBehaviour
     public void getDamage(int amount)
     {
         currentLife -= amount;
+        if (amount < 0)
+            flashColor = Color.green;
+        else
+            flashColor = Color.blue;
+        if (currentLife > MaxLife)
+            currentLife = MaxLife;
         StartCoroutine( flash());
     }
 
