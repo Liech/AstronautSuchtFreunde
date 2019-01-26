@@ -71,6 +71,7 @@ public class Beam : MonoBehaviour
                         dude.GetComponent<bewohnerMovement>().moveSpeed = 5.0f;
                         dude.SetActive(true);
                         lastBeamdown = Time.time;
+                        planets[0].GetComponent<HomeBase>().addDude(dude.GetComponent<BewohnerFarbe>().farbe);
                     }
                 }
             }

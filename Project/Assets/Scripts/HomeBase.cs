@@ -5,6 +5,10 @@ using UnityEngine;
 public class HomeBase : MonoBehaviour
 {
     float t;
+    int Ngrün = 0;
+    int Nlila = 0;
+    int Ncat = 0;
+    int Nrobo = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +21,6 @@ public class HomeBase : MonoBehaviour
         {
             t = Time.time + 10f;
             other.gameObject.GetComponent<Beam>().atHome = true;
-            var UI = GameObject.Find("UICanvas");
-            //UI.GetComponentInChildren<>().text = "Home Sweet Home";
         }
     }
 
@@ -28,8 +30,6 @@ public class HomeBase : MonoBehaviour
         {
             t = float.MaxValue;
             other.gameObject.GetComponent<Beam>().atHome = false;
-            var UI = GameObject.Find("UICanvas");
-            //UI.GetComponentInChildren<TextMesh>().text = "";
         }
     }
 
@@ -43,6 +43,31 @@ public class HomeBase : MonoBehaviour
             t += 2f;
         }
 
+    }
+
+    public void addDude(BewohnerFarbe.Farbe spec)
+    {
+        switch (spec)
+        {
+            case BewohnerFarbe.Farbe.grün:
+                if (Ngrün == 0) GameObject.Find("UICanvas").transform.FindChild("UpgradeUI").gameObject.SetActive(true);
+                Ngrün++;
+                break;
+            case BewohnerFarbe.Farbe.lila:
+                if (Nlila == 0) GameObject.Find("UICanvas").transform.FindChild("UpgradeUI").gameObject.SetActive(true);
+                Nlila++;
+                break;
+            case BewohnerFarbe.Farbe.robo:
+                if (Nrobo == 0) GameObject.Find("UICanvas").transform.FindChild("UpgradeUI").gameObject.SetActive(true);
+                Nrobo++;
+                break;
+            case BewohnerFarbe.Farbe.cat:
+                if (Ncat == 0) GameObject.Find("UICanvas").transform.FindChild("UpgradeUI").gameObject.SetActive(true);
+                Ncat++;
+                break;
+            default:
+                break;
+        }
     }
 
     // Update is called once per frame
