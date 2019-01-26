@@ -281,7 +281,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &9155647450436422888
 MonoBehaviour:
@@ -710,6 +710,11 @@ PrefabInstance:
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 198064713177833144, guid: bab2f13eaaf31454aafa3d30787c5b15,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199908070248919538, guid: bab2f13eaaf31454aafa3d30787c5b15,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -844,6 +849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198064713177833144, guid: bab2f13eaaf31454aafa3d30787c5b15,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199908070248919538, guid: bab2f13eaaf31454aafa3d30787c5b15,
         type: 3}
