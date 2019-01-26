@@ -6,7 +6,7 @@ public class fixedOrbitMovement : MonoBehaviour
 {
     [Range(0,400)]
     public float radius = 100f;
-    [Range(-1, 1)]
+    [Range(-1, 6)]
     public float orbitSpeed  = 1f;
     [Range(-1, 1)]
     public float rotationSpeed = 1f;
