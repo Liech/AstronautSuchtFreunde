@@ -543,6 +543,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
+        type: 3}
+      propertyPath: m_Name
+      value: roboBewohner (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193756, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -612,11 +617,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0403838
-      objectReference: {fileID: 0}
-    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
-        type: 3}
-      propertyPath: m_Name
-      value: roboBewohner (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193752, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
@@ -728,6 +728,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
+        type: 3}
+      propertyPath: m_Name
+      value: roboBewohner (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193756, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -798,11 +803,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0403838
       objectReference: {fileID: 0}
-    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
-        type: 3}
-      propertyPath: m_Name
-      value: roboBewohner (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193752, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: moveSpeed
@@ -823,6 +823,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 8572281510694246637, guid: 7c6afcc50d8d1684abf6d3abb681adff,
+        type: 3}
+      propertyPath: m_Name
+      value: robo_haus_1 (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 8572281510694246634, guid: 7c6afcc50d8d1684abf6d3abb681adff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -893,11 +898,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.08295255
       objectReference: {fileID: 0}
-    - target: {fileID: 8572281510694246637, guid: 7c6afcc50d8d1684abf6d3abb681adff,
-        type: 3}
-      propertyPath: m_Name
-      value: robo_haus_1 (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c6afcc50d8d1684abf6d3abb681adff, type: 3}
 --- !u!4 &5905072176637446218 stripped
@@ -913,11 +913,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
-    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboRammbock (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -988,6 +983,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.045122717
       objectReference: {fileID: 0}
+    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboRammbock (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 7187562650270540362, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: draw
@@ -1023,11 +1023,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
-    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboRammbock (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1083,6 +1078,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -50.839
       objectReference: {fileID: 0}
+    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboRammbock (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6234034286928957902, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: home
@@ -1103,11 +1103,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
-    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboRammbock (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1163,6 +1158,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -50.839
       objectReference: {fileID: 0}
+    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboRammbock (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6234034286928957902, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: home
@@ -1183,6 +1183,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 8572281510694246637, guid: 7c6afcc50d8d1684abf6d3abb681adff,
+        type: 3}
+      propertyPath: m_Name
+      value: robo_haus_1 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 8572281510694246634, guid: 7c6afcc50d8d1684abf6d3abb681adff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1253,11 +1258,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.08295255
       objectReference: {fileID: 0}
-    - target: {fileID: 8572281510694246637, guid: 7c6afcc50d8d1684abf6d3abb681adff,
-        type: 3}
-      propertyPath: m_Name
-      value: robo_haus_1 (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c6afcc50d8d1684abf6d3abb681adff, type: 3}
 --- !u!4 &4570185593850446562 stripped
@@ -1273,6 +1273,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 8572281510694246637, guid: 7c6afcc50d8d1684abf6d3abb681adff,
+        type: 3}
+      propertyPath: m_Name
+      value: robo_haus_1
+      objectReference: {fileID: 0}
     - target: {fileID: 8572281510694246634, guid: 7c6afcc50d8d1684abf6d3abb681adff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1343,11 +1348,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.08295259
       objectReference: {fileID: 0}
-    - target: {fileID: 8572281510694246637, guid: 7c6afcc50d8d1684abf6d3abb681adff,
-        type: 3}
-      propertyPath: m_Name
-      value: robo_haus_1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c6afcc50d8d1684abf6d3abb681adff, type: 3}
 --- !u!4 &4327583303974744696 stripped
@@ -1363,6 +1363,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
+        type: 3}
+      propertyPath: m_Name
+      value: roboBewohner (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193756, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1433,11 +1438,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0403838
       objectReference: {fileID: 0}
-    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
-        type: 3}
-      propertyPath: m_Name
-      value: roboBewohner (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193752, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: moveSpeed
@@ -1458,6 +1458,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
+        type: 3}
+      propertyPath: m_Name
+      value: roboBewohner (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193756, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1528,11 +1533,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.040383745
       objectReference: {fileID: 0}
-    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
-        type: 3}
-      propertyPath: m_Name
-      value: roboBewohner (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193752, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: moveSpeed
@@ -1553,6 +1553,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 8572281510694246637, guid: 7c6afcc50d8d1684abf6d3abb681adff,
+        type: 3}
+      propertyPath: m_Name
+      value: robo_haus_1 (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 8572281510694246634, guid: 7c6afcc50d8d1684abf6d3abb681adff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1623,11 +1628,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.08295255
       objectReference: {fileID: 0}
-    - target: {fileID: 8572281510694246637, guid: 7c6afcc50d8d1684abf6d3abb681adff,
-        type: 3}
-      propertyPath: m_Name
-      value: robo_haus_1 (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c6afcc50d8d1684abf6d3abb681adff, type: 3}
 --- !u!4 &2655519133202931369 stripped
@@ -1643,11 +1643,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
-    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboRammbock (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1703,6 +1698,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -50.839
       objectReference: {fileID: 0}
+    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboRammbock (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6234034286928957902, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: home
@@ -1723,11 +1723,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
-    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboRammbock (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1783,6 +1778,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -50.839
       objectReference: {fileID: 0}
+    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboRammbock (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 6234034286928957902, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: home
@@ -1803,6 +1803,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
+        type: 3}
+      propertyPath: m_Name
+      value: roboBewohner (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193756, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1873,11 +1878,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0403838
       objectReference: {fileID: 0}
-    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
-        type: 3}
-      propertyPath: m_Name
-      value: roboBewohner (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193752, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: moveSpeed
@@ -1898,6 +1898,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
+        type: 3}
+      propertyPath: m_Name
+      value: roboBewohner (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193756, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1968,11 +1973,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0403838
       objectReference: {fileID: 0}
-    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
-        type: 3}
-      propertyPath: m_Name
-      value: roboBewohner (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193752, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: moveSpeed
@@ -1993,6 +1993,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
+        type: 3}
+      propertyPath: m_Name
+      value: roboBewohner (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193756, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2063,11 +2068,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0403838
       objectReference: {fileID: 0}
-    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
-        type: 3}
-      propertyPath: m_Name
-      value: roboBewohner (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193752, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: moveSpeed
@@ -2088,6 +2088,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
+    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
+        type: 3}
+      propertyPath: m_Name
+      value: roboBewohner (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193756, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2158,11 +2163,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0403838
       objectReference: {fileID: 0}
-    - target: {fileID: 5047356246864193759, guid: 10cce14ef95045a41af60e13962a4696,
-        type: 3}
-      propertyPath: m_Name
-      value: roboBewohner (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 5047356246864193752, guid: 10cce14ef95045a41af60e13962a4696,
         type: 3}
       propertyPath: moveSpeed
@@ -2183,11 +2183,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
-    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboRammbock (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2257,6 +2252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.045122717
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboRammbock (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7187562650270540362, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
@@ -2368,11 +2368,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91927195}
     m_Modifications:
-    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboRammbock
-      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2427,6 +2422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187562650270540361, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboRammbock
       objectReference: {fileID: 0}
     - target: {fileID: 7187562650270540362, guid: d2fba537bc6956c4997a5bf0b85fa7c7,
         type: 3}
