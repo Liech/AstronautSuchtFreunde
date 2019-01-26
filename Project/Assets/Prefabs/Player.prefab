@@ -303,19 +303,28 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 6
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.9763775
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.09448242
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -861,11 +870,6 @@ PrefabInstance:
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 198064713177833144, guid: bab2f13eaaf31454aafa3d30787c5b15,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 199908070248919538, guid: bab2f13eaaf31454aafa3d30787c5b15,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1000,11 +1004,6 @@ PrefabInstance:
         type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 198064713177833144, guid: bab2f13eaaf31454aafa3d30787c5b15,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199908070248919538, guid: bab2f13eaaf31454aafa3d30787c5b15,
         type: 3}
