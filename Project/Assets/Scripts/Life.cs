@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ public class Life : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //DOTween.Init();
         sr = GetComponent<SpriteRenderer>();
         if (!sr)
             sr = transform.GetComponentInChildren<SpriteRenderer>();
@@ -37,6 +39,8 @@ public class Life : MonoBehaviour
     IEnumerator flash()
     {
         Color defaultColor = Color.white; //sr.color;
+
+        //sr.DOBlendableColor(flashColor, 0.1f).SetLoops(1, LoopType.Yoyo);
 
         if (sr)  sr.color = flashColor;
 
