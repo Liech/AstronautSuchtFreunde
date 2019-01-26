@@ -27,6 +27,7 @@ public class AimBot : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
+    if (Target != null) 
     Active = (Target.transform.position - transform.position).magnitude < SphereOfInflucence;
     Debug.Log((Target.transform.position - transform.position).magnitude);
     if (!Active)

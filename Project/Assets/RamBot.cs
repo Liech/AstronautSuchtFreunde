@@ -25,6 +25,7 @@ public class RamBot : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
+    if (Target != null)
     Active = (Target.transform.position - transform.position).magnitude < SphereOfInflucence;
     //if (!Active) return;
     //if (!Target) return;
