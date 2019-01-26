@@ -33,7 +33,7 @@ public class tentacle : MonoBehaviour
         s.spline.SetRightTangent(i, (transform.GetChild(i + 2).localPosition - transform.GetChild(i).localPosition).normalized );
       if (i != numberOfPoints-1)
         s.spline.SetRightTangent(i, (transform.GetChild(i + 1).localPosition - transform.GetChild(i).localPosition).normalized) ;
-
+      
     }
     Vector2 dist = (target.transform.position - transform.GetChild(numberOfPoints - 1).position);
     if (dist.magnitude > 1)

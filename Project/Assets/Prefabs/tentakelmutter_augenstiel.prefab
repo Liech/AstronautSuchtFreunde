@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7047014600475049340}
   - component: {fileID: 2372752324169227453}
   - component: {fileID: 4821513149729196640}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: tentakelmutter_auge
   m_TagString: Untagged
   m_Icon: {fileID: 0}

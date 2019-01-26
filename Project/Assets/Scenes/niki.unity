@@ -332,8 +332,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4516313259438596317, guid: 3099d4e998467bc47b55fee441ecbcc3,
         type: 3}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516313259438596317, guid: 3099d4e998467bc47b55fee441ecbcc3,
+        type: 3}
       propertyPath: m_DynamicOccludee
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516313260024539810, guid: 3099d4e998467bc47b55fee441ecbcc3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7351079
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516313260024539810, guid: 3099d4e998467bc47b55fee441ecbcc3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.67795014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516313260024539810, guid: 3099d4e998467bc47b55fee441ecbcc3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9080036
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516313260024539810, guid: 3099d4e998467bc47b55fee441ecbcc3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.067372
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3099d4e998467bc47b55fee441ecbcc3, type: 3}

@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 4516313259438596317}
   - component: {fileID: 4516313259438596316}
   - component: {fileID: 4516313259438596315}
-  - component: {fileID: 4516313259438596312}
   m_Layer: 0
   m_Name: Arm
   m_TagString: Untagged
@@ -222,109 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   s: {fileID: 4516313259438596316}
   numberOfPoints: 6
-  speed: 150
+  speed: 60
   target: {fileID: 4516313260024539813}
---- !u!68 &4516313259438596312
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4516313259438596319}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.04239, y: -0.01235}
-  - {x: -0.00584, y: -0.01423}
-  - {x: 0.09812, y: -0.01941}
-  - {x: 0.26096, y: -0.02723}
-  - {x: 0.47416, y: -0.03702}
-  - {x: 0.72917, y: -0.0481}
-  - {x: 1.01746, y: -0.0598}
-  - {x: 1.3305, y: -0.07145}
-  - {x: 1.65975, y: -0.08238}
-  - {x: 1.99667, y: -0.09192}
-  - {x: 2.33275, y: -0.09939}
-  - {x: 2.65943, y: -0.10414}
-  - {x: 2.96819, y: -0.10547}
-  - {x: 3.25049, y: -0.10273}
-  - {x: 3.49781, y: -0.09525}
-  - {x: 3.70159, y: -0.08234}
-  - {x: 3.85332, y: -0.06334}
-  - {x: 3.85332, y: -0.06334}
-  - {x: 3.98164, y: -0.04647}
-  - {x: 4.12036, y: -0.03932}
-  - {x: 4.26869, y: -0.0403}
-  - {x: 4.42585, y: -0.04782}
-  - {x: 4.59104, y: -0.06027}
-  - {x: 4.7635, y: -0.07607}
-  - {x: 4.94243, y: -0.09362}
-  - {x: 5.12704, y: -0.11133}
-  - {x: 5.31656, y: -0.12759}
-  - {x: 5.51019, y: -0.14082}
-  - {x: 5.70715, y: -0.14941}
-  - {x: 5.90665, y: -0.15178}
-  - {x: 6.10791, y: -0.14633}
-  - {x: 6.31015, y: -0.13147}
-  - {x: 6.51258, y: -0.10559}
-  - {x: 6.7144, y: -0.06711}
-  - {x: 6.7144, y: -0.06711}
-  - {x: 6.92437, y: -0.02831}
-  - {x: 7.15009, y: -0.00146}
-  - {x: 7.38905, y: 0.01506}
-  - {x: 7.63875, y: 0.02289}
-  - {x: 7.89669, y: 0.02364}
-  - {x: 8.16037, y: 0.01895}
-  - {x: 8.42729, y: 0.01042}
-  - {x: 8.69495, y: -0.00029}
-  - {x: 8.96085, y: -0.0116}
-  - {x: 9.22249, y: -0.02185}
-  - {x: 9.47736, y: -0.02944}
-  - {x: 9.72297, y: -0.03273}
-  - {x: 9.95682, y: -0.03009}
-  - {x: 10.1764, y: -0.01992}
-  - {x: 10.37922, y: -0.00057}
-  - {x: 10.56277, y: 0.02956}
-  - {x: 10.56277, y: 0.02956}
-  - {x: 10.73284, y: 0.07076}
-  - {x: 10.898, y: 0.12011}
-  - {x: 11.05997, y: 0.17446}
-  - {x: 11.22042, y: 0.23067}
-  - {x: 11.38107, y: 0.2856}
-  - {x: 11.5436, y: 0.33609}
-  - {x: 11.70973, y: 0.379}
-  - {x: 11.88114, y: 0.4112}
-  - {x: 12.05954, y: 0.42952}
-  - {x: 12.24661, y: 0.43083}
-  - {x: 12.44407, y: 0.41198}
-  - {x: 12.65361, y: 0.36983}
-  - {x: 12.87692, y: 0.30123}
-  - {x: 13.1157, y: 0.20304}
-  - {x: 13.37166, y: 0.0721}
-  - {x: 13.64649, y: -0.09471}
-  - {x: 13.64649, y: -0.09471}
-  - {x: 13.92353, y: -0.25444}
-  - {x: 14.18482, y: -0.36554}
-  - {x: 14.43004, y: -0.43329}
-  - {x: 14.65893, y: -0.46299}
-  - {x: 14.87117, y: -0.45993}
-  - {x: 15.06649, y: -0.42938}
-  - {x: 15.24459, y: -0.37665}
-  - {x: 15.40518, y: -0.30701}
-  - {x: 15.54797, y: -0.22577}
-  - {x: 15.67266, y: -0.13819}
-  - {x: 15.77897, y: -0.04958}
-  - {x: 15.86661, y: 0.03476}
-  - {x: 15.93527, y: 0.10958}
-  - {x: 15.98468, y: 0.16957}
-  - {x: 16.01454, y: 0.20944}
-  - {x: 16.02456, y: 0.22391}
 --- !u!1 &4516313259561929078
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +234,9 @@ GameObject:
   - component: {fileID: 4516313259561929079}
   - component: {fileID: 4516313259561929077}
   - component: {fileID: 4516313259561929076}
-  m_Layer: 0
+  - component: {fileID: 3891443055258946995}
+  - component: {fileID: 2281157117260803657}
+  m_Layer: 10
   m_Name: Tenta3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516313259561929078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: 0, z: 0}
+  m_LocalPosition: {x: 10.93, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4516313259438596314}
@@ -393,10 +293,60 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.77700853, y: 0.07793516}
   m_AutoConfigureDistance: 1
-  m_Distance: 4
+  m_Distance: 3.07398
   m_MaxDistanceOnly: 0
+--- !u!61 &3891443055258946995
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313259561929078}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.3876038, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8562622, y: 1}
+  m_EdgeRadius: 0
+--- !u!233 &2281157117260803657
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313259561929078}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 4516313260640248262}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 3.8500004, y: 0}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
 --- !u!1 &4516313260024539813
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,8 +370,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516313260024539813}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.02, y: -3.84, z: 0.14074822}
+  m_LocalRotation: {x: 0, y: 0, z: -0.93556654, w: -0.35315052}
+  m_LocalPosition: {x: 15.22621, y: -4.9155407, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4516313260106589170}
@@ -452,7 +402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516313260106589172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.15, y: 0.09, z: 0.062376782}
+  m_LocalPosition: {x: 15.62, y: -0.23, z: 0.062376782}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4516313260024539810}
@@ -471,8 +421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8bbe52764f93b42aeb68f90284595f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 40
-  orbitSpeed: 3.24
+  radius: 16
+  orbitSpeed: 3.62
   rotationSpeed: 1
   rotateObejct: 1
 --- !u!1 &4516313260366936094
@@ -486,7 +436,9 @@ GameObject:
   - component: {fileID: 4516313260366936095}
   - component: {fileID: 4516313260366936093}
   - component: {fileID: 4516313260366936092}
-  m_Layer: 0
+  - component: {fileID: 6186110099555888901}
+  - component: {fileID: 7712038721448137869}
+  m_Layer: 10
   m_Name: Tenta4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516313260366936094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16, y: 0, z: 0}
+  m_LocalPosition: {x: 14.37, y: 0.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4516313259438596314}
@@ -543,10 +495,60 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.36342716, y: 0.0629223}
   m_AutoConfigureDistance: 1
-  m_Distance: 4
+  m_Distance: 3.0769327
   m_MaxDistanceOnly: 0
+--- !u!61 &6186110099555888901
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313260366936094}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.2261963, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8043213, y: 1}
+  m_EdgeRadius: 0
+--- !u!233 &7712038721448137869
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313260366936094}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 4516313259561929077}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 1.003231, y: 0}
+  m_ConnectedAnchor: {x: 4.4432306, y: 0.11}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
 --- !u!1 &4516313260557544838
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +560,8 @@ GameObject:
   - component: {fileID: 4516313260557544839}
   - component: {fileID: 4516313260557544837}
   - component: {fileID: 4516313260557544836}
-  m_Layer: 0
+  - component: {fileID: 367034863847253368}
+  m_Layer: 10
   m_Name: Tenta5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +576,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516313260557544838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
+  m_LocalPosition: {x: 17.71, y: 0.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4516313259438596314}
@@ -615,10 +618,34 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.17048264, y: -0.021930993}
   m_AutoConfigureDistance: 1
-  m_Distance: 4
+  m_Distance: 3.1695924
   m_MaxDistanceOnly: 0
+--- !u!233 &367034863847253368
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313260557544838}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 4516313260366936093}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 3.3399992, y: 0}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
 --- !u!1 &4516313260640248264
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +657,9 @@ GameObject:
   - component: {fileID: 4516313260640248265}
   - component: {fileID: 4516313260640248262}
   - component: {fileID: 4516313260640248263}
-  m_Layer: 0
+  - component: {fileID: 4796826377810995153}
+  - component: {fileID: 1365244320568215362}
+  m_Layer: 10
   m_Name: Tenta2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -645,7 +674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516313260640248264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 0, z: 0}
+  m_LocalPosition: {x: 7.08, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4516313259438596314}
@@ -687,10 +716,60 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.2629967, y: -0.55454373}
+  m_ConnectedAnchor: {x: 1.2629967, y: 0.04295951}
   m_AutoConfigureDistance: 1
-  m_Distance: 2.7926164
+  m_Distance: 2.8173308
   m_MaxDistanceOnly: 0
+--- !u!61 &4796826377810995153
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313260640248264}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.4777832, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9693604, y: 1}
+  m_EdgeRadius: 0
+--- !u!233 &1365244320568215362
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313260640248264}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 4516313260805137682}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 4.08, y: 0}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
 --- !u!1 &4516313260784974460
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4516313260784974461}
   - component: {fileID: 4516313260784974458}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tenta0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,7 +833,9 @@ GameObject:
   - component: {fileID: 4516313260805137684}
   - component: {fileID: 4516313260805137682}
   - component: {fileID: 4516313260805137685}
-  m_Layer: 0
+  - component: {fileID: 4744759927835741005}
+  - component: {fileID: 4348280630708598896}
+  m_Layer: 10
   m_Name: Tenta1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,7 +850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516313260805137687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4516313259438596314}
@@ -811,7 +892,57 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.2252197, y: 0.1360569}
+  m_ConnectedAnchor: {x: 1.1992235, y: -0.019813478}
   m_AutoConfigureDistance: 1
-  m_Distance: 2.7781138
+  m_Distance: 1.8008856
   m_MaxDistanceOnly: 0
+--- !u!61 &4744759927835741005
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313260805137687}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.4093933, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0580444, y: 1}
+  m_EdgeRadius: 0
+--- !u!233 &4348280630708598896
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516313260805137687}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 4516313260784974458}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 3, y: 0}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
