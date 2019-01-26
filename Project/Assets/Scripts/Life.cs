@@ -24,7 +24,8 @@ public class Life : MonoBehaviour
     {
         if (currentLife <= 0)
         {      
-          GameObject g = Instantiate(Resources.Load("DeathExplosion", typeof(GameObject))) as GameObject;
+          GameObject g = Instantiate(Resources.Load("Explosion", typeof(GameObject))) as GameObject;
+          g.transform.localScale = Vector3.one * Mathf.Sqrt(MaxLife);
           g.transform.position = transform.position;
           Destroy(gameObject);
         }
