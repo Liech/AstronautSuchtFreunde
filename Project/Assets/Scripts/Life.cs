@@ -13,6 +13,8 @@ public class Life : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        if (!sr)
+            sr = transform.GetComponentInChildren<SpriteRenderer>();
     }
 
   // Update is called once per frame
