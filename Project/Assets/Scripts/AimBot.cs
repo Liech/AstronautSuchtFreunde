@@ -16,6 +16,7 @@ public class AimBot : MonoBehaviour
 
   private bool Active = false;
   private bool ReadyToShoot = true;
+  public Color bulletColor = Color.magenta;
 
   // Start is called before the first frame update
   void Start()
@@ -27,7 +28,8 @@ public class AimBot : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
-    if (Target != null) 
+    if (Target == null) return;
+
     Active = (Target.transform.position - transform.position).magnitude < SphereOfInflucence;
     //Debug.Log((Target.transform.position - transform.position).magnitude);
     if (!Active)
@@ -35,7 +37,6 @@ public class AimBot : MonoBehaviour
       //transform.rotation = Quaternion.identity;
       return;
     }
-
     Vector3 vectorToTarget = Target.transform.position - transform.position;
     float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
     Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -57,6 +58,9 @@ public class AimBot : MonoBehaviour
       Vector2 dir = new Vector2(Mathf.Sin(Mathf.Deg2Rad * Me), Mathf.Cos(Mathf.Deg2Rad * Me));
       bullet.transform.position = (Vector2)transform.position + dir  * bullletStartDistance;
       bullet.GetComponent<Rigidbody2D>().velocity = (dir * bulletStartSpeed);
+      bullet.transform.GetChild(1).GetComponent<SpriteRenderer>().color = bulletColor;
+      ParticleSystem.MainModule settings = bullet.transform.GetChild(0).GetComponent<ParticleSystem>().main;
+      settings.startColor = new ParticleSystem.MinMaxGradient(bulletColor);
       StartCoroutine(Reload());
     }
 

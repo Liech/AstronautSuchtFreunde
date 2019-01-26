@@ -153,6 +153,7 @@ MonoBehaviour:
   reloadTime: 0.1
   bullletStartDistance: 45
   bulletStartSpeed: 20
+  bulletColor: {r: 1, g: 0.6975163, b: 0, a: 1}
 --- !u!50 &7187562650270540364
 Rigidbody2D:
   serializedVersion: 4

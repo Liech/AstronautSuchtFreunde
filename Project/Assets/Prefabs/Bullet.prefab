@@ -170,7 +170,7 @@ SpriteRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dac2b8011927d0548b960641d47cc65c, type: 3}
-  m_Color: {r: 0.7623987, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -205,6 +205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2254105439969751011}
     m_Modifications:
+    - target: {fileID: 1209033374770636, guid: b23a925feeac3ca479dc50ba91829664, type: 3}
+      propertyPath: m_Name
+      value: BulletTrailLila
+      objectReference: {fileID: 0}
     - target: {fileID: 4286283437009128, guid: b23a925feeac3ca479dc50ba91829664, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -249,9 +253,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1209033374770636, guid: b23a925feeac3ca479dc50ba91829664, type: 3}
-      propertyPath: m_Name
-      value: BulletTrailLila
+    - target: {fileID: 198064713177833144, guid: b23a925feeac3ca479dc50ba91829664,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198064713177833144, guid: b23a925feeac3ca479dc50ba91829664,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b23a925feeac3ca479dc50ba91829664, type: 3}
