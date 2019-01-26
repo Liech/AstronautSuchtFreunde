@@ -54,7 +54,7 @@ MonoBehaviour:
   Bullet: {fileID: 1768278724480458840, guid: 5223b20efd13b0049be9c354f1aa5b73, type: 3}
   SphereOfInflucence: 420
   startVelocity: {x: 80, y: 0, z: 0}
-  RotationSpeed: 7
+  RotationSpeed: 10
   reloadTime: 2
   bullletStartDistance: 9
   bulletStartSpeed: 70
