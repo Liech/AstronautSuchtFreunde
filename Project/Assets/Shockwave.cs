@@ -29,7 +29,7 @@ public class Shockwave : MonoBehaviour
     {
       if (c.gameObject.GetComponent<Life>())
       {
-        c.gameObject.GetComponent<Life>().currentLife -= 100;
+        c.gameObject.GetComponent<Life>().getDamage(40);
         c.gameObject.GetComponent<Rigidbody2D>().velocity = (c.gameObject.transform.position - transform.position).normalized * shock;
       }
     }
