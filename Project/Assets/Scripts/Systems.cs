@@ -10,7 +10,7 @@ public class Systems : MonoBehaviour
 
     int weaponLVL = 0;
     int healthLVL = 0;
-    int driveLVL = 0;
+    public int driveLVL = 0;
 
     List<float> driveFactors = new List<float> { 1.0f, 1.5f, 2.3f, 3.0f };
     List<int> healthAmounts = new List<int> { 100, 150, 220, 300 };
