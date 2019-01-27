@@ -25,7 +25,7 @@ public class SpawnGreenBoss : MonoBehaviour
         return;
     }
     boss.SetActive(true);
-    GameObject g = Instantiate(Resources.Load("BossEntry", typeof(GameObject))) as GameObject;
+    //GameObject g = Instantiate(Resources.Load("BossEntry", typeof(GameObject))) as GameObject;
     Destroy(this);
     }
 

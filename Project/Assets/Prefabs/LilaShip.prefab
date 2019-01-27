@@ -146,11 +146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  Bullet: {fileID: 1768278724480458840, guid: 5223b20efd13b0049be9c354f1aa5b73, type: 3}
+  Bullet: {fileID: 1768278724480458840, guid: af73823a1a636384cad00a16b0c39ccc, type: 3}
   SphereOfInflucence: 200
-  FireSound: {fileID: 864679850256827423, guid: c92368627b1e9af418b40ae83fa032ab,
-    type: 3}
-  firepitch: 0
   startVelocity: {x: 0, y: 0, z: 0}
   RotationSpeed: 7
   reloadTime: 2
@@ -236,4 +233,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9372bc0921027d5458b6ddfe45856846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageFactor: 1

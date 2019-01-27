@@ -16,6 +16,7 @@ public class bewohnerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+    if (transform.parent == null) return;
         planetPos = transform.parent.GetComponent<Transform>().position;
     }
 

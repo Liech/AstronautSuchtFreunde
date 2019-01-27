@@ -25,7 +25,8 @@ public class SpawnRoboBoss : MonoBehaviour
         return;
     }
     boss.GetComponent<RoboBossBehavior>().WakeUp();
-    GameObject g = Instantiate(Resources.Load("BossEntry", typeof(GameObject))) as GameObject;
+    //GameObject g = Instantiate(Resources.Load("BossEntry", typeof(GameObject))) as GameObject;
+    boss.GetComponent<AudioSource>().enabled = true;
     Destroy(this);
     }
 

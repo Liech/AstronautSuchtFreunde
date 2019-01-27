@@ -59,7 +59,7 @@ public class AimBot : MonoBehaviour
       bullet.transform.position = (Vector2)transform.position + dir  * bullletStartDistance;
       bullet.GetComponent<Rigidbody2D>().velocity = (dir * bulletStartSpeed);
       if (bullet.transform.childCount >= 2)
-      bullet.transform.GetChild(1).GetComponent<SpriteRenderer>().color = bulletColor;
+        if(bullet.transform.GetChild(1).GetComponent<SpriteRenderer>()) bullet.transform.GetChild(1).GetComponent<SpriteRenderer>().color = bulletColor;
       if (bullet.transform.childCount >= 1)
       {
         ParticleSystem.MainModule settings = bullet.transform.GetChild(0).GetComponent<ParticleSystem>().main;
