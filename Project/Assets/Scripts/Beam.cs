@@ -26,7 +26,15 @@ public class Beam : MonoBehaviour
                 var planets = GetComponent<move>().InPlanetInfluence;
                 if (planets.Count > 0)
                 {
+                    BossStatus b = planets[0].GetComponent<BossStatus>();
+                    if (b)
+                        if (!planets[0].GetComponent<BossStatus>().bossDefeated)
+                            return;
+
                     var hitpos = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x;
+                    if ((hitpos - transform.position).magnitude > 80f)
+                        return;
+
                     var hitposin = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x*0.9f;
                     lr.SetPosition(1, transform.InverseTransformPoint(hitposin));
                     lr.enabled = true;
@@ -56,6 +64,10 @@ public class Beam : MonoBehaviour
                     LineRenderer lr = GameObject.Find("BeamCone").GetComponent<LineRenderer>();
                     var planets = GetComponent<move>().InPlanetInfluence;
                     var hitpos = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x;
+
+                    if ((hitpos - transform.position).magnitude > 80f)
+                        return;
+
                     var hitposin = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x*0.9f;
                     var hitposOut = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x*1.1f;
                     lr.SetPosition(1, transform.InverseTransformPoint(hitposin));
