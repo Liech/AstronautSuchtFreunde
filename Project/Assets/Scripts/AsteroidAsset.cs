@@ -40,21 +40,21 @@ public class AsteroidAsset : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        float time = Time.time;
-        Gizmos.color = new Color(1, 0, 0);
-        Gizmos.DrawLine(
-            transform.position + new Vector3(0, -1, 0),
-            transform.position + new Vector3(0.5f*(nextAngularTime-time), -1, 0));
+        //float time = Time.time;
+        //Gizmos.color = new Color(1, 0, 0);
+        //Gizmos.DrawLine(
+        //    transform.position + new Vector3(0, -1, 0),
+        //    transform.position + new Vector3(0.5f*(nextAngularTime-time), -1, 0));
 
-        if (angularAdds > 0)
-            Gizmos.DrawSphere(transform.position, angularAdd);
+        //if (angularAdds > 0)
+        //    Gizmos.DrawSphere(transform.position, angularAdd);
 
-        Gizmos.color = new Color(0, 1, 0);
-        Gizmos.DrawLine(
-            transform.position + new Vector3(0, -3, 0),
-            transform.position + new Vector3(0.5f * (nextVelocityTime - time), -3, 0));
-        if (velocityAdds > 0)
-            Gizmos.DrawSphere(transform.position + new Vector3(0,1,0), 10*velocityAdd.magnitude);
+        //Gizmos.color = new Color(0, 1, 0);
+        //Gizmos.DrawLine(
+        //    transform.position + new Vector3(0, -3, 0),
+        //    transform.position + new Vector3(0.5f * (nextVelocityTime - time), -3, 0));
+        //if (velocityAdds > 0)
+        //    Gizmos.DrawSphere(transform.position + new Vector3(0,1,0), 10*velocityAdd.magnitude);
     }
 
     void FixedUpdate()

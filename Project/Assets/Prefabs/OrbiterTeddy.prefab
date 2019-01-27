@@ -68,11 +68,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8249630699375626213}
     m_Modifications:
-    - target: {fileID: 3605322337116352584, guid: 733b904cdf349a542a52cf32ad62f59a,
-        type: 3}
-      propertyPath: m_Name
-      value: TedMech
-      objectReference: {fileID: 0}
     - target: {fileID: 3605322337116352586, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -128,16 +123,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -255.586
       objectReference: {fileID: 0}
-    - target: {fileID: 3605322337116352580, guid: 733b904cdf349a542a52cf32ad62f59a,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.7628657
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605322337116352580, guid: 733b904cdf349a542a52cf32ad62f59a,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2.138413
-      objectReference: {fileID: 0}
     - target: {fileID: 3605322336479083699, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -153,10 +138,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -74.452
       objectReference: {fileID: 0}
-    - target: {fileID: 3605322336479083696, guid: 733b904cdf349a542a52cf32ad62f59a,
+    - target: {fileID: 3605322337116352584, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}
-      propertyPath: distance
-      value: 500
+      propertyPath: m_Name
+      value: TedMech
       objectReference: {fileID: 0}
     - target: {fileID: 3792383563355019596, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}
@@ -173,10 +158,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -88.3
       objectReference: {fileID: 0}
+    - target: {fileID: 3605322337116352580, guid: 733b904cdf349a542a52cf32ad62f59a,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.7628657
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605322337116352580, guid: 733b904cdf349a542a52cf32ad62f59a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.138413
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605322336479083696, guid: 733b904cdf349a542a52cf32ad62f59a,
+        type: 3}
+      propertyPath: distance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 3792383563355019599, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}
       propertyPath: distance
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7902675474590603398, guid: 733b904cdf349a542a52cf32ad62f59a,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733b904cdf349a542a52cf32ad62f59a, type: 3}

@@ -11,6 +11,7 @@ public class lilaBossOnDestroy : MonoBehaviour
   }
   private void OnDestroy()
   {
+    if (isQuitting) return;
     GameObject.Find("Universe/lila Planet").GetComponent<BossStatus>().bossDefeated = true;
     }
 }

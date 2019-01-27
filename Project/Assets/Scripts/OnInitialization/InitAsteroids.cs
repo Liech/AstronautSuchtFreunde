@@ -12,6 +12,8 @@ public class InitAsteroids : MonoBehaviour
     [Range(2, 20)]
     public float maxScale = 3;
 
+  public bool drawDebug = false;
+
     public float screenSize = 100;
     public float velocityScaling = 20;
 
@@ -43,4 +45,10 @@ public class InitAsteroids : MonoBehaviour
     {
         
     }
+
+  private void OnDrawGizmos()
+  {
+    if (!drawDebug) return;
+    Gizmos.DrawSphere(transform.position, screenSize);
+  }
 }
