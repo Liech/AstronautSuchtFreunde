@@ -78,9 +78,10 @@ public class Life : MonoBehaviour
         Invulnerable = true;
         allowPlayerControl(false);
 
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
 
 
         currentLife = MaxLife;
