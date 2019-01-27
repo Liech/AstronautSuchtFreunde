@@ -78,7 +78,9 @@ public class Life : MonoBehaviour
         Invulnerable = true;
         allowPlayerControl(false);
 
-        yield return new WaitForSeconds(0.8f);
+
+
+        yield return new WaitForSeconds(1.5f);
 
 
         currentLife = MaxLife;
@@ -90,9 +92,10 @@ public class Life : MonoBehaviour
 
     void allowPlayerControl(bool b)
     {
-        GetComponent<FireWeapon>().enabled = b;
-        GetComponent<Beam>().enabled       = b;
-        GetComponent<move>().enabled       = b;
+        GetComponent<FireWeapon>().enabled     = b;
+        GetComponent<Beam>().enabled           = b;
+        GetComponent<move>().enabled           = b;
+        GetComponent<SpriteRenderer>().enabled = b;
     }
 
 }
