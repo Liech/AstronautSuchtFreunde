@@ -25,6 +25,7 @@ public class spreadStars : MonoBehaviour
         for (int i = 0; i < numStars; i++)
         {
             GameObject newStar = Instantiate(stars[i % stars.Capacity], this.GetComponent<Transform>() );
+            newStar.layer = gameObject.layer;
             Transform t = newStar.GetComponent<Transform>();
             t.localScale = Vector3.one * Random.Range(minScale, maxScale) * 0.001f;
             t.localPosition   = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), 0);
