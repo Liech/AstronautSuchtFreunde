@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408812832823609214}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.0688, y: 2.0688, z: 2.0688}
   m_Children: []
   m_Father: {fileID: 1149223829338899288}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8851207524018855691
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,11 +90,11 @@ GameObject:
   - component: {fileID: 1149223829338899288}
   - component: {fileID: 3141637314075472564}
   - component: {fileID: 7187562650270540364}
-  - component: {fileID: 7187562650270540363}
   - component: {fileID: 2147402746559037225}
   - component: {fileID: 1722459536386535396}
   - component: {fileID: 6234034286928957902}
   - component: {fileID: 6169240419250309686}
+  - component: {fileID: 6977994995187182230}
   m_Layer: 12
   m_Name: RoboRammbock
   m_TagString: Untagged
@@ -130,9 +130,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.49}
-  m_Size: {x: 17.91, y: 7.42}
-  m_Direction: 1
+  m_Offset: {x: -0.54, y: 0.49}
+  m_Size: {x: 7, y: 17}
+  m_Direction: 0
 --- !u!50 &7187562650270540364
 Rigidbody2D:
   serializedVersion: 4
@@ -154,18 +154,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7187562650270540363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7187562650270540361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d49a69bfb0c99e94cbdff25fe849c090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2147402746559037225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,5 +209,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78867995295e2ab4e90275d7d787ee21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6977994995187182230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187562650270540361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d4157ed8174f9478e3e2e621cc03f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
