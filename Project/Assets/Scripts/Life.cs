@@ -24,7 +24,7 @@ public class Life : MonoBehaviour
   // Update is called once per frame
     void Update()
     {
-        if (currentLife <= 0)
+        if (currentLife <= 0 && !Invulnerable)
         {
             GameObject g;
             if (MaxLife > 200f)
@@ -35,15 +35,15 @@ public class Life : MonoBehaviour
                 g = Instantiate(Resources.Load("Explosion", typeof(GameObject))) as GameObject;
             g.transform.localScale = Vector3.one * Mathf.Sqrt(MaxLife);
             g.transform.position = transform.position;
-            if(gameObject.name != "Player")
+            if (gameObject.name != "Player")
                 Destroy(gameObject);
             else
-            {
-                currentLife = MaxLife;
-                GetComponent<move>().respawnPlayer();
-            }
+                StartCoroutine(playerDeath());
         }
     }
+
+
+
 
     public void getDamage(int amount)
     {
@@ -71,6 +71,28 @@ public class Life : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
 
         if (sr)  sr.color = defaultColor;
+    }
+
+    IEnumerator playerDeath()
+    {
+        Invulnerable = true;
+        allowPlayerControl(false);
+
+        yield return new WaitForSeconds(0.8f);
+
+
+        currentLife = MaxLife;
+        GetComponent<move>().respawnPlayer();
+        allowPlayerControl(true);
+        Invulnerable = false;
+
+    }
+
+    void allowPlayerControl(bool b)
+    {
+        GetComponent<FireWeapon>().enabled = b;
+        GetComponent<Beam>().enabled       = b;
+        GetComponent<move>().enabled       = b;
     }
 
 }

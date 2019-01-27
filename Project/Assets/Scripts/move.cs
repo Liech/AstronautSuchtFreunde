@@ -59,7 +59,7 @@ public class move : MonoBehaviour
         rb.velocity        = startingVelocity;
         Systems.start_time -= 30;
 
-        GameObject.Find("TimeDisplay").transform.DOShakePosition(2, 20);
-        GameObject.Find("TimeDisplay").transform.DOShakeScale(1, 0.5f);
+        GameObject.Find("TimeDisplay").transform.DOShakePosition(4f, 30f);
+        GameObject.Find("TimeDisplay").transform.DOShakeScale(1f, 0.5f);
     }
 }
