@@ -5,10 +5,14 @@ using UnityEngine;
 public class setZzero : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void FixedUpdate()
     {
         Vector3 pos = transform.position;
-        pos.z = 0f;
-        transform.position = pos;
+        if (pos.z != 0)
+        {
+            pos.z = 0f;
+            transform.position = pos;
+        }
+
     }
 }
