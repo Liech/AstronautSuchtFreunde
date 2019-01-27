@@ -380,16 +380,6 @@ PrefabInstance:
       propertyPath: radius
       value: 500
       objectReference: {fileID: 0}
-    - target: {fileID: 7246862377898897685, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: home
-      value: 
-      objectReference: {fileID: 3280740935262846417}
-    - target: {fileID: 5902749721037460974, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: home
-      value: 
-      objectReference: {fileID: 3280740935262846417}
     - target: {fileID: 3142557852250727002, guid: cbc402a63d8f111478da988c561b6094,
         type: 3}
       propertyPath: minHomeDist
@@ -400,16 +390,26 @@ PrefabInstance:
       propertyPath: minHomeDist
       value: 121.8
       objectReference: {fileID: 0}
-    - target: {fileID: 9134631486420614079, guid: cbc402a63d8f111478da988c561b6094,
-        type: 3}
-      propertyPath: minHomeDist
-      value: 121.8
-      objectReference: {fileID: 0}
     - target: {fileID: 7618647425681188016, guid: cbc402a63d8f111478da988c561b6094,
         type: 3}
       propertyPath: minHomeDist
       value: 121.8
       objectReference: {fileID: 0}
+    - target: {fileID: 7246862377898897685, guid: cbc402a63d8f111478da988c561b6094,
+        type: 3}
+      propertyPath: home
+      value: 
+      objectReference: {fileID: 3280740935262846417}
+    - target: {fileID: 9134631486420614079, guid: cbc402a63d8f111478da988c561b6094,
+        type: 3}
+      propertyPath: minHomeDist
+      value: 121.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902749721037460974, guid: cbc402a63d8f111478da988c561b6094,
+        type: 3}
+      propertyPath: home
+      value: 
+      objectReference: {fileID: 3280740935262846417}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbc402a63d8f111478da988c561b6094, type: 3}
 --- !u!4 &3280740935262846417 stripped

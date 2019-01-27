@@ -165,8 +165,8 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
+  DopplerLevel: 0.2
+  MinDistance: 50
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -202,7 +202,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -363,6 +363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2254105439969751011}
     m_Modifications:
+    - target: {fileID: 1209033374770636, guid: b23a925feeac3ca479dc50ba91829664, type: 3}
+      propertyPath: m_Name
+      value: BulletTrailLila
+      objectReference: {fileID: 0}
     - target: {fileID: 4286283437009128, guid: b23a925feeac3ca479dc50ba91829664, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -406,10 +410,6 @@ PrefabInstance:
     - target: {fileID: 4286283437009128, guid: b23a925feeac3ca479dc50ba91829664, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1209033374770636, guid: b23a925feeac3ca479dc50ba91829664, type: 3}
-      propertyPath: m_Name
-      value: BulletTrailLila
       objectReference: {fileID: 0}
     - target: {fileID: 198064713177833144, guid: b23a925feeac3ca479dc50ba91829664,
         type: 3}

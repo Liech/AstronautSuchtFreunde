@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c631de612c59fb9408775d349132c95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0.4
+  rotationSpeed: 1.2
 --- !u!114 &3569241518198237470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,16 +1501,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.010898576
       objectReference: {fileID: 0}
-    - target: {fileID: 7701112947254181734, guid: eb5daab1cad0aef4891724b845f26f43,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7701112947254181734, guid: eb5daab1cad0aef4891724b845f26f43,
-        type: 3}
-      propertyPath: m_Radius
-      value: 34.55
-      objectReference: {fileID: 0}
     - target: {fileID: 7701112947353023925, guid: eb5daab1cad0aef4891724b845f26f43,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1525,6 +1515,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701112947254181734, guid: eb5daab1cad0aef4891724b845f26f43,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701112947254181734, guid: eb5daab1cad0aef4891724b845f26f43,
+        type: 3}
+      propertyPath: m_Radius
+      value: 34.55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb5daab1cad0aef4891724b845f26f43, type: 3}
