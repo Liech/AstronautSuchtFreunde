@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 639896067}
   - component: {fileID: 3775453682352987482}
   - component: {fileID: 2636895882920615191}
+  - component: {fileID: 1459160194285100487}
   m_Layer: 0
   m_Name: lila Planet
   m_TagString: Untagged
@@ -178,6 +179,19 @@ MonoBehaviour:
   boss: {fileID: 833422752475043636, guid: 91077fa62222be44dbd9dfa6cbc5cfb1, type: 3}
   radius: 400
   showradius: 0
+--- !u!114 &1459160194285100487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639896066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693537e014f85a0458d30859265881cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossDefeated: 0
 --- !u!1 &1228351644
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +924,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639896071}
     m_Modifications:
+    - target: {fileID: 7187562650270540361, guid: 4aa6770b6f1b97b429136465f73cb95c,
+        type: 3}
+      propertyPath: m_Name
+      value: LilaShip
+      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: 4aa6770b6f1b97b429136465f73cb95c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -965,11 +984,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7187562650270540361, guid: 4aa6770b6f1b97b429136465f73cb95c,
-        type: 3}
-      propertyPath: m_Name
-      value: LilaShip
-      objectReference: {fileID: 0}
     - target: {fileID: 7187562650270540362, guid: 4aa6770b6f1b97b429136465f73cb95c,
         type: 3}
       propertyPath: Target
@@ -995,6 +1009,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639896071}
     m_Modifications:
+    - target: {fileID: 7187562650270540361, guid: 4aa6770b6f1b97b429136465f73cb95c,
+        type: 3}
+      propertyPath: m_Name
+      value: LilaShip (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: 4aa6770b6f1b97b429136465f73cb95c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1049,11 +1068,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7187562650270540361, guid: 4aa6770b6f1b97b429136465f73cb95c,
-        type: 3}
-      propertyPath: m_Name
-      value: LilaShip (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7187562650270540362, guid: 4aa6770b6f1b97b429136465f73cb95c,
         type: 3}
@@ -1615,6 +1629,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639896071}
     m_Modifications:
+    - target: {fileID: 7187562650270540361, guid: 4aa6770b6f1b97b429136465f73cb95c,
+        type: 3}
+      propertyPath: m_Name
+      value: LilaShip (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1149223829338899288, guid: 4aa6770b6f1b97b429136465f73cb95c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1669,11 +1688,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7187562650270540361, guid: 4aa6770b6f1b97b429136465f73cb95c,
-        type: 3}
-      propertyPath: m_Name
-      value: LilaShip (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7187562650270540362, guid: 4aa6770b6f1b97b429136465f73cb95c,
         type: 3}

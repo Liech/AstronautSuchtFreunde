@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 91927191}
   - component: {fileID: 7780632298180762634}
   - component: {fileID: 4736485822866331718}
+  - component: {fileID: 470050599517653055}
   m_Layer: 0
   m_Name: Cat Planet
   m_TagString: Untagged
@@ -172,6 +173,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: -1
+--- !u!114 &470050599517653055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91927190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693537e014f85a0458d30859265881cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossDefeated: 0
 --- !u!1 &207880122
 GameObject:
   m_ObjectHideFlags: 0
