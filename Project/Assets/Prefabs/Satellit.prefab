@@ -53,8 +53,6 @@ MonoBehaviour:
   Target: {fileID: 0}
   Bullet: {fileID: 1768278724480458840, guid: 5223b20efd13b0049be9c354f1aa5b73, type: 3}
   SphereOfInflucence: 420
-  FireSound: {fileID: 864679850256827423, guid: c92368627b1e9af418b40ae83fa032ab,
-    type: 3}
   startVelocity: {x: 80, y: 0, z: 0}
   RotationSpeed: 10
   reloadTime: 2
@@ -126,8 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1a7fca4a8eae3448e811d285d92381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLife: 1
-  MaxLife: 1
+  currentLife: 150
+  MaxLife: 150
 --- !u!114 &6737559994445412602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9372bc0921027d5458b6ddfe45856846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageFactor: 1
 --- !u!114 &1526107996159292153
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -785,16 +785,6 @@ PrefabInstance:
       propertyPath: DamageFactor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8202283170071063719, guid: 802478e9bb341f8448857a6bbd380375,
-        type: 3}
-      propertyPath: currentLife
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202283170071063719, guid: 802478e9bb341f8448857a6bbd380375,
-        type: 3}
-      propertyPath: MaxLife
-      value: 50
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 802478e9bb341f8448857a6bbd380375, type: 3}
 --- !u!4 &2833569765960134764 stripped
@@ -1344,16 +1334,6 @@ PrefabInstance:
         type: 3}
       propertyPath: DamageFactor
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202283170071063719, guid: 802478e9bb341f8448857a6bbd380375,
-        type: 3}
-      propertyPath: currentLife
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202283170071063719, guid: 802478e9bb341f8448857a6bbd380375,
-        type: 3}
-      propertyPath: MaxLife
-      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 802478e9bb341f8448857a6bbd380375, type: 3}
