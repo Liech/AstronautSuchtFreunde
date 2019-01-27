@@ -23,6 +23,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8249630699375626213}
   - component: {fileID: 8249630699375626212}
+  - component: {fileID: 1908306942020241269}
   m_Layer: 0
   m_Name: OrbiterTeddy
   m_TagString: Untagged
@@ -61,6 +62,18 @@ MonoBehaviour:
   orbitSpeed: -1
   rotationSpeed: 1
   rotateObejct: 0
+--- !u!114 &1908306942020241269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8249630699375626211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de24a85afc028f489e0a3defb04a1ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8249630699492583841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68,6 +81,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8249630699375626213}
     m_Modifications:
+    - target: {fileID: 3605322337116352584, guid: 733b904cdf349a542a52cf32ad62f59a,
+        type: 3}
+      propertyPath: m_Name
+      value: TedMech
+      objectReference: {fileID: 0}
     - target: {fileID: 3605322337116352586, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -123,6 +141,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -255.586
       objectReference: {fileID: 0}
+    - target: {fileID: 3605322337116352580, guid: 733b904cdf349a542a52cf32ad62f59a,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.7628657
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605322337116352580, guid: 733b904cdf349a542a52cf32ad62f59a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.138413
+      objectReference: {fileID: 0}
     - target: {fileID: 3605322336479083699, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -138,11 +166,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -74.452
       objectReference: {fileID: 0}
-    - target: {fileID: 3605322337116352584, guid: 733b904cdf349a542a52cf32ad62f59a,
-        type: 3}
-      propertyPath: m_Name
-      value: TedMech
-      objectReference: {fileID: 0}
     - target: {fileID: 3792383563355019596, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -157,16 +180,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -88.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605322337116352580, guid: 733b904cdf349a542a52cf32ad62f59a,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.7628657
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605322337116352580, guid: 733b904cdf349a542a52cf32ad62f59a,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2.138413
       objectReference: {fileID: 0}
     - target: {fileID: 3605322336479083696, guid: 733b904cdf349a542a52cf32ad62f59a,
         type: 3}

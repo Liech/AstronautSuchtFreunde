@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoboBossBehavior : MonoBehaviour
 {
@@ -15,8 +16,8 @@ public class RoboBossBehavior : MonoBehaviour
   public float bullletStartDistance = 60;
   public float bulletStartSpeed = 70;
 
-  // Start is called before the first frame update
-  void Start()
+    // Start is called before the first frame update
+    void Start()
   {
     
   }
@@ -30,8 +31,19 @@ public class RoboBossBehavior : MonoBehaviour
     transform.parent.GetComponent<fixedOrbitMovement>().radius = orbit + Mathf.Sin(Time.time* ocillationspeed) * oscillationdistance;
   }
   float orbit = 0;
+
+  IEnumerator showBossInfo()
+  {
+        GameObject bossSpawnInfo = GameObject.Find("UICanvas").transform.Find("BossSpawn").gameObject;
+        bossSpawnInfo.GetComponentInChildren<Text>().text = "Bertram, protector of Robotron has awoken. Defeat him!";
+        bossSpawnInfo.SetActive(true);
+        yield return new WaitForSeconds(5.0f);
+        bossSpawnInfo.SetActive(false);
+  }
+
   public void WakeUp()
   {
+    StartCoroutine(showBossInfo());
     GetComponent<SpriteRenderer>().sprite = AwakeSprite;
     Life l = gameObject.AddComponent<Life>();
     gameObject.AddComponent<CollisionDamage>();

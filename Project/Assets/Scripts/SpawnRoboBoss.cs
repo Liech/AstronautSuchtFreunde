@@ -1,18 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(gravityInfluence))]
 public class SpawnRoboBoss : MonoBehaviour
 {
   public GameObject boss;
     public float radius;
-  public bool showradius = false;
+    public bool showradius = false;
     // Start is called before the first frame update
     void Start()
     {
-      
-
     }
 
     // Update is called once per frame
@@ -25,7 +24,7 @@ public class SpawnRoboBoss : MonoBehaviour
         return;
     }
     boss.GetComponent<RoboBossBehavior>().WakeUp();
-    //GameObject g = Instantiate(Resources.Load("BossEntry", typeof(GameObject))) as GameObject;
+        //GameObject g = Instantiate(Resources.Load("BossEntry", typeof(GameObject))) as GameObject;
     boss.GetComponent<AudioSource>().enabled = true;
     Destroy(this);
     }
