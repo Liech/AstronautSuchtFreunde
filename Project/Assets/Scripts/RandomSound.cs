@@ -26,7 +26,7 @@ public class RandomSound : MonoBehaviour {
             Play = true;
             StartTime = Time.time;
             if (Sounds.Count != 0)
-            Instantiate(Sounds[(int)(Sounds.Count * Random.value)]).GetComponent<AudioSource>().Play();
+            Sounds[(int)(Sounds.Count * Random.value)].GetComponent<AudioSource>().Play();
         }
     }
 }
