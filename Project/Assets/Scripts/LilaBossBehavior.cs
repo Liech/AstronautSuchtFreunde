@@ -19,7 +19,7 @@ public class LilaBossBehavior : MonoBehaviour
     {
       if (Eye1 == null && Eye2 == null)
         Destroy(gameObject);
-    rot += rotationSpeed;
-    transform.parent.eulerAngles = new Vector3(0,0,rot);
+    //rot += rotationSpeed;
+    //transform.parent.eulerAngles = new Vector3(0,0,rot);
     }
 }
