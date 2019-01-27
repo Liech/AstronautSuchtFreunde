@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ public class move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DOTween.Init();
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = startingVelocity;
         startingPosition = transform.position;
@@ -56,5 +58,8 @@ public class move : MonoBehaviour
         transform.position = startingPosition;
         rb.velocity        = startingVelocity;
         Systems.start_time -= 30;
+
+        GameObject.Find("TimeDisplay").transform.DOShakePosition(2, 20);
+        GameObject.Find("TimeDisplay").transform.DOShakeScale(1, 0.5f);
     }
 }
