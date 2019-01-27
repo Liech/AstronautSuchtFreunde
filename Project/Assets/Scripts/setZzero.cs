@@ -11,5 +11,4 @@ public class setZzero : MonoBehaviour
         pos.z = 0f;
         transform.position = pos;
     }
-
 }
