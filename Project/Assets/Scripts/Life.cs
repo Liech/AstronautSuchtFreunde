@@ -27,6 +27,8 @@ public class Life : MonoBehaviour
             GameObject g;
             if (MaxLife > 200f)
                 g = Instantiate(Resources.Load("multiExplosion", typeof(GameObject))) as GameObject;
+            else if (MaxLife > 10f)
+                g = Instantiate(Resources.Load("mediumExplosion", typeof(GameObject))) as GameObject;
             else
                 g = Instantiate(Resources.Load("Explosion", typeof(GameObject))) as GameObject;
             g.transform.localScale = Vector3.one * Mathf.Sqrt(MaxLife);
