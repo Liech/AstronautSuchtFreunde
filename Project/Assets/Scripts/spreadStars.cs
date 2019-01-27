@@ -29,7 +29,7 @@ public class spreadStars : MonoBehaviour
             Transform t = newStar.GetComponent<Transform>();
             t.localScale = Vector3.one * Random.Range(minScale, maxScale) * 0.001f;
             t.localPosition   = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), 0);
-            t.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+            t.rotation = Quaternion.Euler(0, 0, Random.Range(0f, 360f));
         }
 
     }                                                                             
