@@ -46,25 +46,30 @@ public class HomeBase : MonoBehaviour
 
     }
 
+    private void youWon()
+    {
+        Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s");
+    }
+
     public void addDude(BewohnerFarbe.Farbe spec)
     {
         int numberOfSpecs = (Ngrün > 0 ? 1 : 0) + (Nlila > 0 ? 1 : 0) + (Nrobo > 0 ? 1 : 0) + (Ncat > 0 ? 1 : 0);
         switch (spec)
         {
             case BewohnerFarbe.Farbe.grün:
-                if (Ngrün == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
+                if (Ngrün == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else youWon(); }
                 Ngrün++;
                 break;
             case BewohnerFarbe.Farbe.lila:
-                if (Nlila == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
+                if (Nlila == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else youWon(); }
                 Nlila++;
                 break;
             case BewohnerFarbe.Farbe.robo:
-                if (Nrobo == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
+                if (Nrobo == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else youWon(); }
                 Nrobo++;
                 break;
             case BewohnerFarbe.Farbe.cat:
-                if (Ncat == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s"); }
+                if (Ncat == 0) { if (numberOfSpecs < 3) upgradeUI.GetComponent<ShowGUI>().showME(); else youWon(); }
                 Ncat++;
                 break;
             default:

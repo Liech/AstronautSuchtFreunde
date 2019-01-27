@@ -401,6 +401,7 @@ MonoBehaviour:
   numAsteroids: 25
   minScale: 2
   maxScale: 5
+  drawDebug: 0
   screenSize: 75
   velocityScaling: 20
   asteroids:
@@ -769,6 +770,7 @@ MonoBehaviour:
   numAsteroids: 25
   minScale: 2
   maxScale: 5
+  drawDebug: 0
   screenSize: 150
   velocityScaling: 10
   asteroids:
@@ -1606,18 +1608,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1613055690}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1580988091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580988089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a0cdf25f54deec49bf61dd96bab9cdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1613055690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1744,54 +1734,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9155647448985673138}
-    - target: {fileID: 1209484280, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: lvlUpDrive
-      objectReference: {fileID: 0}
     - target: {fileID: 42071878, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9155647448985673138}
-    - target: {fileID: 42071878, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: lvlUpWeapons
-      objectReference: {fileID: 0}
-    - target: {fileID: 42071878, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1944165844, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9155647448985673138}
-    - target: {fileID: 1944165844, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: lvlUpHealth
-      objectReference: {fileID: 0}
-    - target: {fileID: 117560831, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 7c9fd65d864ceb14d8e7bbcc7a774c26,
-        type: 3}
-    - target: {fileID: 938689482, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 7c9fd65d864ceb14d8e7bbcc7a774c26,
-        type: 3}
-    - target: {fileID: 1047223083, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 7c9fd65d864ceb14d8e7bbcc7a774c26,
-        type: 3}
-    - target: {fileID: 2010620766, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 7c9fd65d864ceb14d8e7bbcc7a774c26,
-        type: 3}
-    - target: {fileID: 719767466, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 9155647448985673136}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2bf50e4b29aace49b92b42b2afeb011, type: 3}
 --- !u!1 &1636880854 stripped
@@ -1968,6 +1918,7 @@ MonoBehaviour:
   numAsteroids: 10
   minScale: 2
   maxScale: 5
+  drawDebug: 0
   screenSize: 50
   velocityScaling: 10
   asteroids:
