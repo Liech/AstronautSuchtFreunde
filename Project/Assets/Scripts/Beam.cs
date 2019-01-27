@@ -8,11 +8,14 @@ public class Beam : MonoBehaviour
     GameObject Universe;
     public bool atHome;
     float lastBeamdown;
+
+    private LineRenderer lr;
     // Start is called before the first frame update
     void Start()
     {
         Universe = GameObject.Find("Universe");
         lastBeamdown = Time.time;
+        lr = GameObject.Find("BeamCone").GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
@@ -20,10 +23,26 @@ public class Beam : MonoBehaviour
     {
         if (Input.GetButton("Fire3"))
         {
+            var planets = GetComponent<move>().InPlanetInfluence;
+            if (planets.Count == 0)
+            {
+                lr.enabled = false;
+                return;
+            }
+
+            var hitpos = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x;
+            if ((hitpos - transform.position).magnitude > 80f)
+            {
+                lr.enabled = false;
+                return;
+            }
+
+            var hitposin = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x * 0.9f;
+
+
             if (!atHome && storedDudes.Count < 5)
             {
-                LineRenderer lr = GameObject.Find("BeamCone").GetComponent<LineRenderer>();
-                var planets = GetComponent<move>().InPlanetInfluence;
+                
                 if (planets.Count > 0)
                 {
                     BossStatus b = planets[0].GetComponent<BossStatus>();
@@ -31,11 +50,6 @@ public class Beam : MonoBehaviour
                         if (!planets[0].GetComponent<BossStatus>().bossDefeated)
                             return;
 
-                    var hitpos = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x;
-                    if ((hitpos - transform.position).magnitude > 80f)
-                        return;
-
-                    var hitposin = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x*0.9f;
                     lr.SetPosition(1, transform.InverseTransformPoint(hitposin));
                     lr.enabled = true;
                     var bewohners = planets[0].GetComponentsInChildren<bewohnerMovement>();
@@ -59,16 +73,11 @@ public class Beam : MonoBehaviour
                 }
             } else
             {
-                if (storedDudes.Count > 0)
+                if (atHome && storedDudes.Count > 0)
                 {
-                    LineRenderer lr = GameObject.Find("BeamCone").GetComponent<LineRenderer>();
-                    var planets = GetComponent<move>().InPlanetInfluence;
-                    var hitpos = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x;
-
                     if ((hitpos - transform.position).magnitude > 80f)
                         return;
 
-                    var hitposin = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x*0.9f;
                     var hitposOut = planets[0].transform.position + (transform.position - planets[0].transform.position).normalized * planets[0].transform.lossyScale.x*1.1f;
                     lr.SetPosition(1, transform.InverseTransformPoint(hitposin));
                     lr.enabled = true;
@@ -87,7 +96,6 @@ public class Beam : MonoBehaviour
                     }
                 } else
                 {
-                    LineRenderer lr = GameObject.Find("BeamCone").GetComponent<LineRenderer>();
                     lr.enabled = false;
                 }
             }
@@ -95,7 +103,6 @@ public class Beam : MonoBehaviour
 
         } else
         {
-            LineRenderer lr = GameObject.Find("BeamCone").GetComponent<LineRenderer>();
             lr.enabled = false;
         }
     }
