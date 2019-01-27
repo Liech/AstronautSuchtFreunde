@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-
+  public string scene;
     public void loadMainScene()
     {
-        SceneManager.LoadScene("Space",LoadSceneMode.Single);
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
         //scen.
     }
 
