@@ -16,7 +16,7 @@ public class tentacle : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
     if (target == null) return;
 
@@ -33,7 +33,9 @@ public class tentacle : MonoBehaviour
         s.spline.SetRightTangent(i, (transform.GetChild(i + 2).localPosition - transform.GetChild(i).localPosition).normalized );
       if (i != numberOfPoints-1)
         s.spline.SetRightTangent(i, (transform.GetChild(i + 1).localPosition - transform.GetChild(i).localPosition).normalized) ;
-      
+
+      if (transform.GetChild(i).GetComponent<DistanceJoint2D>())
+        transform.GetChild(i).GetComponent<DistanceJoint2D>().distance = 3;
     }
     Vector2 dist = (target.transform.position - transform.GetChild(numberOfPoints - 1).position);
     if (dist.magnitude > 1)
