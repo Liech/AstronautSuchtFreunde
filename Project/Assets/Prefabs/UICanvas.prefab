@@ -1468,7 +1468,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5688092210407067174, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
 --- !u!1 &5688092210754156298 stripped
 GameObject:
@@ -1609,7 +1610,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5688092210407067174, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
 --- !u!224 &5688092211031242625 stripped
 RectTransform:
@@ -1750,7 +1752,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5688092210407067174, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
 --- !u!1 &5688092211298180315 stripped
 GameObject:
@@ -1891,7 +1894,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5688092210407067174, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
 --- !u!224 &5688092211607055767 stripped
 RectTransform:
@@ -2032,7 +2036,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5688092210407067174, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09dee0bb5dc78f24da98e2b16a5877f7, type: 3}
 --- !u!1 &5688092211855092378 stripped
 GameObject:
@@ -2466,13 +2471,13 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 608855831, guid: 4aee03b0c0f901d49bf20a4c5688ee85, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 608855830, guid: 4aee03b0c0f901d49bf20a4c5688ee85, type: 3}
+      propertyPath: Lifes.Array.data[0]
       value: 
       objectReference: {fileID: 21300000, guid: b00d6c32b7442ac47aef7d93b2e4b5a5,
         type: 3}
-    - target: {fileID: 608855830, guid: 4aee03b0c0f901d49bf20a4c5688ee85, type: 3}
-      propertyPath: Lifes.Array.data[0]
+    - target: {fileID: 608855831, guid: 4aee03b0c0f901d49bf20a4c5688ee85, type: 3}
+      propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: b00d6c32b7442ac47aef7d93b2e4b5a5,
         type: 3}
