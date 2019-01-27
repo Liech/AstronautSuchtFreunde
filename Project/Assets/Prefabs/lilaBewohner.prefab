@@ -367,5 +367,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sounds:
   - {fileID: 8839898609238102373}
-  - {fileID: 6744510727669844759}
   Propability: 0.003
