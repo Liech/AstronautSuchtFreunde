@@ -55,5 +55,6 @@ public class move : MonoBehaviour
     {
         transform.position = startingPosition;
         rb.velocity        = startingVelocity;
+        Systems.start_time -= 30;
     }
 }
