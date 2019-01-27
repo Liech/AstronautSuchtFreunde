@@ -15,7 +15,8 @@ public class Systems : MonoBehaviour
     List<float> driveFactors = new List<float> { 1.0f, 1.5f, 2.3f, 3.0f };
     List<int> healthAmounts = new List<int> { 100, 150, 220, 300 };
 
-    public float totalTime = 0; 
+    public static float start_time = 0; 
+    public static float score_time = float.MaxValue; 
 
     public void lvlUpDrive()
     {
@@ -44,7 +45,7 @@ public class Systems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        totalTime = Time.time;
+        start_time = Time.time;
     }
 
     // Update is called once per frame

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HomeBase : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class HomeBase : MonoBehaviour
     int Ncat = 0;
     int Nrobo = 0;
     public GameObject upgradeUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +50,9 @@ public class HomeBase : MonoBehaviour
 
     private void youWon()
     {
-        Debug.Log("You won after " + (Time.time - GameObject.Find("/Player").GetComponent<Systems>().totalTime).ToString() + "s");
+        Systems.score_time = Time.time - Systems.start_time;
+        Debug.Log("You won after " + (Systems.score_time).ToString() + "s");
+        SceneManager.LoadScene("VictoryScreen", LoadSceneMode.Single);
     }
 
     public void addDude(BewohnerFarbe.Farbe spec)
