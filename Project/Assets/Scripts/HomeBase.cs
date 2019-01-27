@@ -41,7 +41,7 @@ public class HomeBase : MonoBehaviour
         if (Time.time > t)
         {
             other.gameObject.GetComponent<Life>().getDamage(-10);
-            t += 2f;
+            t += 2;
         }
 
     }
