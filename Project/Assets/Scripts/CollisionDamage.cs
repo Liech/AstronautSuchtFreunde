@@ -8,11 +8,13 @@ using UnityEngine;
 public class CollisionDamage : MonoBehaviour
 {
     List<float> damageFactors = new List<float> { 1.0f, 1.3f, 1.8f, 2.5f };
+    GameObject player;
+    public bool shotByPlayer = false;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -23,7 +25,14 @@ public class CollisionDamage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        float factor = damageFactors[GameObject.Find("Player").GetComponent<Systems>().WeaponLvL-1];
+
+        float factor = 1.0f;
+
+        CollisionDamage otherCD = collision.gameObject.GetComponent<CollisionDamage>();
+        if (otherCD)
+            if (otherCD.shotByPlayer)
+                factor = damageFactors[player.GetComponent<Systems>().WeaponLvL - 1];
+
         //Debug.Log("WeaponLevel: " + GameObject.Find("Player").GetComponent<Systems>().WeaponLvL.ToString() + ", factor: " + factor.ToString());
         float diff = collision.relativeVelocity.magnitude;
         if (diff > 20f)

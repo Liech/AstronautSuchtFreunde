@@ -22,6 +22,7 @@ public class FireWeapon : MonoBehaviour
         Vector2 dir = new Vector2(Mathf.Sin(Mathf.Deg2Rad * (Me + angle)), Mathf.Cos(Mathf.Deg2Rad * (Me + angle)));
         bullet.transform.position = (Vector2)transform.position + dir * dist * bullletStartDistance;
         bullet.GetComponent<Rigidbody2D>().velocity = (dir * bulletStartSpeed) + GetComponent<Rigidbody2D>().velocity;
+        bullet.GetComponent<CollisionDamage>().shotByPlayer = true;
     }
 
     // Update is called once per frame
