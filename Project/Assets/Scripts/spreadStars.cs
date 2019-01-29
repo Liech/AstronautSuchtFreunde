@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class spreadStars : MonoBehaviour
 {
-    [Range(1, 1000)]
+    [Range(1, 2000)]
     public int numStars = 10;
 
     [Range(0, 2)]
