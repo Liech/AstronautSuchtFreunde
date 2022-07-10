@@ -2083,6 +2083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tentakelmutter_augenstiel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4821513149729196640, guid: ad9b9805fff9fac48a491f49ea410abb,
+        type: 3}
+      propertyPath: DamageLock
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9b9805fff9fac48a491f49ea410abb, type: 3}
 --- !u!4 &3083961806160815782 stripped
@@ -2163,6 +2168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tentakelmutter_augenstiel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821513149729196640, guid: ad9b9805fff9fac48a491f49ea410abb,
+        type: 3}
+      propertyPath: DamageLock
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9b9805fff9fac48a491f49ea410abb, type: 3}
