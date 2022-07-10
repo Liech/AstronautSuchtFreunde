@@ -5,7 +5,6 @@ using UnityEngine.U2D;
 
 public class tentacle : MonoBehaviour
 {
-    public SpriteShapeController s;
     public int numberOfPoints = 4;
   public float speed = 15;
   public GameObject target;
@@ -23,16 +22,16 @@ public class tentacle : MonoBehaviour
     for (int i = 0; i < numberOfPoints; i++)
     {
       //if (i!= 0)transform.GetChild(i).GetComponent<DistanceJoint2D>().distance = 3;
-      s.spline.SetPosition(i, transform.GetChild(i).localPosition);
-      if (i > 1)
-        s.spline.SetLeftTangent(i, (transform.GetChild(i - 2).localPosition - transform.GetChild(i).localPosition).normalized);
-      else if (i != 0)
-        s.spline.SetLeftTangent(i, (transform.GetChild(i - 1).localPosition - transform.GetChild(i).localPosition).normalized);
-
-      if (i < numberOfPoints-2)
-        s.spline.SetRightTangent(i, (transform.GetChild(i + 2).localPosition - transform.GetChild(i).localPosition).normalized );
-      if (i != numberOfPoints-1)
-        s.spline.SetRightTangent(i, (transform.GetChild(i + 1).localPosition - transform.GetChild(i).localPosition).normalized) ;
+      //s.spline.SetPosition(i, transform.GetChild(i).localPosition);
+      //if (i > 1)
+      //  s.spline.SetLeftTangent(i, (transform.GetChild(i - 2).localPosition - transform.GetChild(i).localPosition).normalized);
+      //else if (i != 0)
+      //  s.spline.SetLeftTangent(i, (transform.GetChild(i - 1).localPosition - transform.GetChild(i).localPosition).normalized);
+      //
+      //if (i < numberOfPoints-2)
+      //  s.spline.SetRightTangent(i, (transform.GetChild(i + 2).localPosition - transform.GetChild(i).localPosition).normalized );
+      //if (i != numberOfPoints-1)
+      //  s.spline.SetRightTangent(i, (transform.GetChild(i + 1).localPosition - transform.GetChild(i).localPosition).normalized) ;
 
       if (transform.GetChild(i).GetComponent<DistanceJoint2D>())
         transform.GetChild(i).GetComponent<DistanceJoint2D>().distance = 3;
