@@ -18,6 +18,8 @@ Entry of the Global Game Jam 2019 at the Hochschule Trier
 
 https://globalgamejam.org/2019/games/astronaut-sucht-freunde
 
+Credits can be found on the GGJ Page or ingame
+
 Migrated from an old SVN Backup
 
 See GGJ Website or start the Game for the Credits
