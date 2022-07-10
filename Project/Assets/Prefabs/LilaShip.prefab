@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 7187562650270540363}
   - component: {fileID: 2147402746559037225}
   - component: {fileID: 1722459536386535396}
+  - component: {fileID: 6729943823471490657}
   m_Layer: 0
   m_Name: LilaShip
   m_TagString: Untagged
@@ -240,3 +241,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotByPlayer: 0
   DamageLock: 1
+--- !u!114 &6729943823471490657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187562650270540361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb8be41ec78f044cb8335103329f652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

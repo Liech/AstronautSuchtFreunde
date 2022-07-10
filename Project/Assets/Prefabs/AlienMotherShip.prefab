@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 397315324876238142}
   - component: {fileID: 1798900244838259060}
   - component: {fileID: 2856611782394846093}
+  - component: {fileID: 2556273239289099550}
   m_Layer: 11
   m_Name: AlienMotherShip
   m_TagString: Untagged
@@ -344,6 +345,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2556273239289099550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701112947254181729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb8be41ec78f044cb8335103329f652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7701112947353023924
 GameObject:
   m_ObjectHideFlags: 0

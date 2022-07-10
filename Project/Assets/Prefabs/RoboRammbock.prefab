@@ -42,9 +42,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -56,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -95,6 +99,7 @@ GameObject:
   - component: {fileID: 6234034286928957902}
   - component: {fileID: 6169240419250309686}
   - component: {fileID: 6977994995187182230}
+  - component: {fileID: 500194218919248499}
   m_Layer: 12
   m_Name: RoboRammbock
   m_TagString: Untagged
@@ -168,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   MaxLife: 100
+  Invulnerable: 0
 --- !u!114 &1722459536386535396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9372bc0921027d5458b6ddfe45856846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shotByPlayer: 0
+  DamageLock: 0
 --- !u!114 &6234034286928957902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,5 +229,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48d4157ed8174f9478e3e2e621cc03f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &500194218919248499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187562650270540361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb8be41ec78f044cb8335103329f652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

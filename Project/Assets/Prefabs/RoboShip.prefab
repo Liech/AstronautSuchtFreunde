@@ -42,9 +42,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -56,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -95,6 +99,7 @@ GameObject:
   - component: {fileID: 2147402746559037225}
   - component: {fileID: 1722459536386535396}
   - component: {fileID: 1253366563194754692}
+  - component: {fileID: 7531550806113508954}
   m_Layer: 0
   m_Name: RoboShip
   m_TagString: Untagged
@@ -148,7 +153,6 @@ MonoBehaviour:
   Target: {fileID: 864679850256827423, guid: c92368627b1e9af418b40ae83fa032ab, type: 3}
   Bullet: {fileID: 1768278724480458840, guid: 91397ba8b24d2364eaa311d28db1bcfc, type: 3}
   SphereOfInflucence: 200
-  FireSound: {fileID: 0}
   startVelocity: {x: 0, y: 0, z: 0}
   RotationSpeed: 7
   reloadTime: 2
@@ -210,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 130
   MaxLife: 130
+  Invulnerable: 0
 --- !u!114 &1722459536386535396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9372bc0921027d5458b6ddfe45856846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageFactor: 1
+  shotByPlayer: 0
+  DamageLock: 0
 --- !u!114 &1253366563194754692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,5 +239,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78867995295e2ab4e90275d7d787ee21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7531550806113508954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187562650270540361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb8be41ec78f044cb8335103329f652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
