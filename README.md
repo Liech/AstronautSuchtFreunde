@@ -8,6 +8,10 @@ Being alone on his planet for so long, a little astronaut begins his search for 
 
 (English Translation: Astronaut Seeks Friends)
 
+# Play it in the Browser
+
+https://peinliech.itch.io/astronaut-sucht-freunde
+
 # History
 
 Entry of the Global Game Jam 2019 at the Hochschule Trier
